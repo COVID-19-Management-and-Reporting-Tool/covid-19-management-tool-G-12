@@ -10,3 +10,6 @@ SHARIFAH SHANKLIN 19/U/13487/PS #
 LEKU DAVIS 19/U/13745/PS #
 UYIMEH UDOH 19/X/22246/PS #
 NEEMA DAVID PONTIANO 19/U/12481/PS #
+
+# CAUTION!
+The socket program can only run in a linux environment.
