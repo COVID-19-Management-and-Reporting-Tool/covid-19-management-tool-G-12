@@ -1,0 +1,2 @@
+5	Okello Ivan 	2020/10/11 	False Positive 	Assymptomatic 	M 	John
+6	Leku Davis 	2020/02/03 	Positive 	Assymptomatic 	M 	Malik Berry
