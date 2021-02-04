@@ -1,2 +1,3 @@
-mysqlimport --local m0xd9krubhtswwgd patient.txt
+#pick the data from the text file and send it to the database.
+mysql<import.sql
 ./clear

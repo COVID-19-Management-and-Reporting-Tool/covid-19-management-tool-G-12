@@ -58,6 +58,8 @@ const char* search(FILE *ptr,char search_criteria[])
 		}
 		token = strtok(NULL,delimeter);
 	}
+	char clear[] = "";
+	strcpy(string,clear);
 	//end
 	return seacrh_result;
 }
@@ -248,6 +250,7 @@ int main(int argc, char *argv[])
 	        	printf("Search Results sent\n");
 	        	strcpy(seacrh_result,clean);
 	        }
+	        strcpy(seacrh_result,clean);
 		}
 		else if(choice==1)
 		{
