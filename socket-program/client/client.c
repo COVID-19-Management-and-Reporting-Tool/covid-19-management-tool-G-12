@@ -38,7 +38,7 @@ struct PatientData
 	char nature[100];
 	char gender[5];;
 	char officer_name[100];
-	char filename[100];
+	char filename[200];
 } checkstatus;
 
 

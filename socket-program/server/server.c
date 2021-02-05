@@ -111,7 +111,7 @@ int main(int argc, char *argv[])
 		char nature[100];
 		char gender[5];;
 		char officer_name[100];
-		char filename[100];
+		char filename[200];
 	};
     
    
@@ -162,7 +162,7 @@ int main(int argc, char *argv[])
 	        printf("%d\n",choice);
 	        
 
-	        //determine what to do 
+	      //addpatient option
 	     if(choice==2)
 	     {
 	        fptr=fopen("/home/elijah/Desktop/covid-19-management-tool/cron_job/patient.txt","a");
@@ -194,16 +194,15 @@ int main(int argc, char *argv[])
 		  	fclose(fileptr2);
 		  	printf("successfully added a patient\n");
 		  	printf(" case one is run\n");
-	       }    
+	       }   
+	       //addpatientlist 
 	    else if(choice==3)
 	    {
 
 		   	printf("%d\n",choice);
-		    char source_file_name_path[] = "/home/elijah/Desktop/covid-19-management-tool/cron_job/file.txt";
-		    // strncat(source_file_name_path,patient_info.name,strlen(patient_info.name));
-		    // printf("%s\n",source_file_name_path);
 		      
-		  	f1=fopen(source_file_name_path,"r");
+		  	f1=fopen(patient_info.filename,"r");
+		  	
 		 	if(f1==NULL)
 		 	{
 		 		printf("error opening file one\n");
@@ -231,6 +230,7 @@ int main(int argc, char *argv[])
 		 	fclose(f1);
 		 	fclose(f2);
 	 	}  
+	 	//search
 	 	else if(choice==4)
 	 	{
 	 		FILE *pointer;
@@ -252,6 +252,7 @@ int main(int argc, char *argv[])
 	        }
 	        strcpy(seacrh_result,clean);
 		}
+		//check_status
 		else if(choice==1)
 		{
 			//open file

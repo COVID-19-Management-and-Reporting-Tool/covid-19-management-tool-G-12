@@ -1,3 +1,4 @@
-#pick the data from the text file and send it to the database.
-mysql<import.sql
-./clear
+#! /bin/bash
+/usr/bin/mysql</home/elijah/Desktop/covid-19-management-tool/cron_job/import.sql
+/bin/rm /home/elijah/Desktop/covid-19-management-tool/cron_job/patient.txt
+/bin/touch /home/elijah/Desktop/covid-19-management-tool/cron_job/patient.txt
