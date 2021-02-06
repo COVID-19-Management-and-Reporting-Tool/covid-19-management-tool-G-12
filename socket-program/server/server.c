@@ -64,7 +64,7 @@ const char* search(FILE *ptr,char search_criteria[])
 	return seacrh_result;
 }
 
-//create socket
+//create socket function
 short SocketCreate(void)
 {
     short hSocket;
@@ -267,7 +267,7 @@ int main(int argc, char *argv[])
 				printf("\n ERROR: failed to open file %s",filepath);	
 			}
 			
-			//read file line by line
+			//read file line by line to get character by line
 			while(!feof(fp))
 			{
 				fgets(line,300,fp);			
