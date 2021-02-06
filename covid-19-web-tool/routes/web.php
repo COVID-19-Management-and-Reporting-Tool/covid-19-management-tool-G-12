@@ -54,6 +54,7 @@ Route::get('/healthofficer',[HealthOfficerController::class,'workerList']);
 
 Route::get('/patient',[PatientController::class,'patientList']);
 
+//for paying up the officers
 Route::get('/payment',[AddPayment::class,'pay']);
 
 
