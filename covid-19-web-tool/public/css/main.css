@@ -1,0 +1,1729 @@
+@font-face {
+  src: url(fonts/YuseiMagic-Regular.ttf);
+  font-family: yusei;
+}
+
+@font-face {
+  src: url(fonts/DMSans-Regular.ttf);
+  font-family: dmsans;
+}
+
+@font-face {
+  src: url(fonts/Basic-Regular.ttf);
+  font-family: basic;
+}
+
+* {
+  font-size: 0.9rem;
+  font-family: dmsans;
+  font-weight: 300;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ----------------------- customized styles --------------------------------------------------------------------------------------- */
+button {
+  padding: 0.7rem 1rem;
+  outline: none;
+  background-color: #2997b9;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn {
+  padding: 0.7rem 1rem;
+  outline: none;
+  background-color: #2997b9;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.gr {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+.gr.gr-2 {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.gr.gr-3 {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.nav-wrapper .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem 3rem;
+}
+
+.nav-wrapper .nav-bar h2 a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #268dac;
+}
+
+.nav-wrapper .nav-bar .nav-btns .btn {
+  margin: 0 0.3rem;
+  text-transform: uppercase;
+}
+
+main {
+  /* ------------------------------------------ account  ------------------------------------------------------------------------------------------------------------------------------------ */
+  /* ------------------------------------------ donations ------------------------------------------------------------------------------------------------------------------------------------ */
+  /* ------------------------------------------ payments ------------------------------------------------------------------------------------------------------------------------------------ */
+  /* ------------------------------------------ patients ------------------------------------------------------------------------------------------------------------------------------------ */
+  /* ------------------------------------------ health officer ------------------------------------------------------------------------------------------------------------------------------------ */
+  /* --------------------- back top top button -------------------------------------------------------------------------- */
+}
+
+main#home .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem 0 0 2rem;
+  background: #2997b9;
+}
+
+main#home .content .sidenav {
+  width: 20%;
+}
+
+main#home .content .sidenav ul {
+  padding: 2rem 0;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+main#home .content .sidenav ul li {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+main#home .content .sidenav ul li a {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+main#home .content .sidenav ul li a.active {
+  background: #217893;
+}
+
+main#home .content .sidenav ul li a:hover {
+  background: #2486a4;
+}
+
+main#home .content .sidenav ul li a i {
+  font-size: 2rem;
+  margin: 0.7rem 0.5rem 0 0.5rem;
+}
+
+main#home .content .dashboard-sum {
+  width: 80%;
+  padding: 5rem 5rem 5rem 3rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  background: #fff;
+}
+
+main#home .content .dashboard-sum h4 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+
+main#home .content .dashboard-sum .gr {
+  padding: 8rem 5rem;
+  background: url(/img/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 2rem;
+}
+
+main#home .content .dashboard-sum .gr div {
+  border-radius: 2rem;
+  -webkit-box-shadow: 10px 10px 10px #1b647a;
+          box-shadow: 10px 10px 10px #1b647a;
+  background-color: #2997b9;
+  padding: 2rem 3rem;
+  text-align: center;
+  color: #fff;
+}
+
+main#home .content .dashboard-sum .gr div h3 {
+  font-size: 1.5rem;
+}
+
+main#home .content .dashboard-sum .gr div p {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+main#home .content .charts {
+  padding: 3rem 0;
+}
+
+main#home .content .charts h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1rem 0 3rem 0;
+}
+
+main#home .content .charts .donations-chart {
+  background: #061229;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+}
+
+main#home .content .charts .donations-chart h4 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  color: #fff;
+}
+
+main#home .content .charts .donations-chart canvas {
+  color: #fff !important;
+}
+
+main#home .content .charts .enrollment-chart {
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+}
+
+main#home .content .charts .enrollment-chart h4 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+main#account #login-page .login-page-hdr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 5rem;
+  background: #2997b9;
+}
+
+main#account #login-page .login-page-hdr span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#account #login-page .login-page-hdr span i {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+main#account #login-page .login-page-hdr span h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+main#account #login-page .login-page-hdr i.lni-home {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+main#account #login-page .login-form {
+  padding: 3rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#account #login-page .login-form form {
+  width: 60%;
+  padding: 3rem 5rem;
+}
+
+main#account #login-page .login-form form .input {
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main#account #login-page .login-form form .input label {
+  font-size: 1rem;
+  padding: 0.6rem 0;
+}
+
+main#account #login-page .login-form form .input input {
+  width: 80%;
+  padding: 0.7rem 2rem 0.7rem 3rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #2383a0;
+  font-size: 1rem;
+  color: #000;
+}
+
+main#account #login-page .login-form form .input i {
+  position: relative;
+  font-size: 1.5rem;
+  top: 2rem;
+  color: #2997b9;
+}
+
+main#account #login-page .login-form form .form-txt {
+  padding: 2rem 0;
+}
+
+main#account #login-page .login-form form .form-txt p {
+  font-size: 1rem;
+}
+
+main#account #login-page .login-form form .form-txt p a {
+  text-decoration: none;
+  color: #2997b9;
+  font-size: 1.2rem;
+}
+
+main#account #login-page .login-form .login-img {
+  width: 40%;
+  background: url(img/bg-2.svg);
+  background-size: cover;
+}
+
+main#account #signup-page .signup-page-hdr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 5rem;
+  background: #2997b9;
+}
+
+main#account #signup-page .signup-page-hdr span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#account #signup-page .signup-page-hdr span i {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+main#account #signup-page .signup-page-hdr span h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+main#account #signup-page .signup-page-hdr i.lni-home {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+main#account #signup-page .signup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 5rem;
+}
+
+main#account #signup-page .signup-form form {
+  width: 60%;
+  padding: 3rem 5rem;
+}
+
+main#account #signup-page .signup-form form .input {
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main#account #signup-page .signup-form form .input label {
+  font-size: 1rem;
+  padding: 0.6rem 0;
+}
+
+main#account #signup-page .signup-form form .input input {
+  width: 80%;
+  padding: 0.7rem 2rem 0.7rem 3rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #2383a0;
+  font-size: 1rem;
+  color: #000;
+}
+
+main#account #signup-page .signup-form form .input i {
+  position: relative;
+  font-size: 1.5rem;
+  top: 2rem;
+  color: #2997b9;
+}
+
+main#account #signup-page .signup-form form .form-txt {
+  padding: 2rem 0;
+}
+
+main#account #signup-page .signup-form form .form-txt p {
+  font-size: 1rem;
+}
+
+main#account #signup-page .signup-form form .form-txt p a {
+  text-decoration: none;
+  color: #2997b9;
+  font-size: 1.2rem;
+}
+
+main#account #signup-page .signup-form .signup-img {
+  width: 40%;
+  background: url(img/bg-3.svg);
+  background-size: cover;
+}
+
+main#donations #donation-page-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #fff;
+}
+
+main#donations #donation-page-form.modal-form {
+  display: none;
+}
+
+main#donations #donation-page-form.modal-form.active {
+  display: block;
+}
+
+main#donations #donation-page-form .donation-page-hdr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 5rem;
+  background: #2997b9;
+}
+
+main#donations #donation-page-form .donation-page-hdr span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#donations #donation-page-form .donation-page-hdr span i {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+main#donations #donation-page-form .donation-page-hdr span h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+main#donations #donation-page-form .donation-page-hdr i.lni-close {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+main#donations #donation-page-form .donation-page-hdr i.lni-close:hover {
+  cursor: pointer;
+}
+
+main#donations #donation-page-form .donation-form {
+  padding: 3rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#donations #donation-page-form .donation-form form {
+  width: 60%;
+  padding: 3rem 5rem;
+}
+
+main#donations #donation-page-form .donation-form form .input {
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main#donations #donation-page-form .donation-form form .input.hide {
+  display: none;
+}
+
+main#donations #donation-page-form .donation-form form .input label {
+  font-size: 1rem;
+  padding: 0.6rem 0;
+}
+
+main#donations #donation-page-form .donation-form form .input input {
+  width: 80%;
+  padding: 0.7rem 2rem 0.7rem 3rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #2383a0;
+  font-size: 1rem;
+  color: #000;
+}
+
+main#donations #donation-page-form .donation-form form .input i {
+  position: relative;
+  font-size: 1.5rem;
+  top: 2rem;
+  color: #2997b9;
+}
+
+main#donations #donation-page-form .donation-form form .form-txt {
+  padding: 2rem 0;
+}
+
+main#donations #donation-page-form .donation-form form .form-txt p {
+  font-size: 1rem;
+}
+
+main#donations #donation-page-form .donation-form form .form-txt p a {
+  text-decoration: none;
+  color: #2997b9;
+  font-size: 1.2rem;
+}
+
+main#donations #donation-page-form .donation-form .donation-img {
+  width: 40%;
+  background: url(img/bg-2.svg);
+  background-size: cover;
+}
+
+main#donations .donations-content .di {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 3rem;
+}
+
+main#donations .donations-content .di .content-hdr {
+  padding: 5rem 5rem 3rem 5rem;
+  -webkit-box-shadow: 10px 10px 10px #1b647a;
+          box-shadow: 10px 10px 10px #1b647a;
+  background-color: #2997b9;
+  width: 500px;
+  border-radius: 2rem;
+}
+
+main#donations .donations-content .di .content-hdr span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#donations .donations-content .di .content-hdr span h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+main#donations .donations-content .di .content-hdr span i {
+  font-size: 5rem;
+  color: #fff;
+  margin: 1rem 0.5rem;
+}
+
+main#donations .donations-content .di .content-hdr button {
+  background-color: #fff;
+  color: #000;
+}
+
+main#donations .donations-content .di .sidenav {
+  padding: 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#donations .donations-content .di .sidenav i {
+  font-size: 3rem;
+  margin: 1rem 0;
+  z-index: 3;
+  cursor: pointer;
+}
+
+main#donations .donations-content .di .sidenav ul {
+  padding: 1rem 3rem;
+  background: #f1f1f1;
+  border-radius: 2rem;
+  width: 30%;
+  position: absolute;
+  -webkit-box-shadow: 10px 10px 10px #cbcbcb;
+          box-shadow: 10px 10px 10px #cbcbcb;
+  top: 15rem;
+  right: 10rem;
+  visibility: hidden;
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+main#donations .donations-content .di .sidenav ul.show {
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+main#donations .donations-content .di .sidenav ul li {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+}
+
+main#donations .donations-content .di .sidenav ul li a {
+  padding: 1rem 6rem 1rem 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+main#donations .donations-content .di .sidenav ul li a:hover {
+  background: #e4e4e4;
+}
+
+main#donations .donations-content .di .sidenav ul li a.active {
+  background: #dadada;
+}
+
+main#donations .donations-content .di .sidenav ul li a.active:hover {
+  background: #dadada;
+}
+
+main#donations .donations-content .di .sidenav ul li a i {
+  font-size: 2rem;
+}
+
+main#donations .donations-table {
+  padding: 5rem 3rem;
+}
+
+main#donations .donations-table h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+main#donations .donations-table table {
+  background-color: #f1f1f1;
+  width: 100%;
+  border-radius: 2rem;
+  padding: 5rem;
+}
+
+main#donations .donations-table table tr th {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  width: 30%;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid #2997b9;
+}
+
+main#donations .donations-table table tr td {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  width: 30%;
+  margin: 0;
+}
+
+main#donations .donations-table table tr td:nth-child(1) {
+  border-right: 2px solid #2997b9;
+}
+
+main#donations .donations-table table tr td:nth-child(2) {
+  border-right: 2px solid #2997b9;
+}
+
+main#payments #payment-page-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #fff;
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+main#payments #payment-page-form.modal-form {
+  display: none;
+}
+
+main#payments #payment-page-form.modal-form.active {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  display: block;
+}
+
+main#payments #payment-page-form .payment-page-hdr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 5rem;
+  background: #2997b9;
+}
+
+main#payments #payment-page-form .payment-page-hdr span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#payments #payment-page-form .payment-page-hdr span i {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+main#payments #payment-page-form .payment-page-hdr span h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+main#payments #payment-page-form .payment-page-hdr i.lni-close {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+main#payments #payment-page-form .payment-page-hdr i.lni-close:hover {
+  cursor: pointer;
+}
+
+main#payments #payment-page-form .payment-form {
+  padding: 3rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#payments #payment-page-form .payment-form form {
+  width: 60%;
+  padding: 3rem 5rem;
+}
+
+main#payments #payment-page-form .payment-form form .input {
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main#payments #payment-page-form .payment-form form .input.hide {
+  display: none;
+}
+
+main#payments #payment-page-form .payment-form form .input label {
+  font-size: 1rem;
+  padding: 0.6rem 0;
+}
+
+main#payments #payment-page-form .payment-form form .input input {
+  width: 80%;
+  padding: 0.7rem 2rem 0.7rem 3rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #2383a0;
+  font-size: 1rem;
+  color: #000;
+}
+
+main#payments #payment-page-form .payment-form form .input i {
+  position: relative;
+  font-size: 1.5rem;
+  top: 2rem;
+  color: #2997b9;
+}
+
+main#payments #payment-page-form .payment-form form .form-txt {
+  padding: 2rem 0;
+}
+
+main#payments #payment-page-form .payment-form form .form-txt p {
+  font-size: 1rem;
+}
+
+main#payments #payment-page-form .payment-form form .form-txt p a {
+  text-decoration: none;
+  color: #2997b9;
+  font-size: 1.2rem;
+}
+
+main#payments #payment-page-form .payment-form .payment-img {
+  width: 40%;
+  background: url(img/bg-2.svg);
+  background-size: cover;
+}
+
+main#payments .payments-content .di {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 3rem;
+}
+
+main#payments .payments-content .di .content-hdr {
+  -webkit-box-shadow: 10px 10px 10px #1b647a;
+          box-shadow: 10px 10px 10px #1b647a;
+  padding: 5rem 5rem 3rem 5rem;
+  background-color: #2997b9;
+  width: 500px;
+  border-radius: 2rem;
+}
+
+main#payments .payments-content .di .content-hdr span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#payments .payments-content .di .content-hdr span h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+main#payments .payments-content .di .content-hdr span i {
+  font-size: 5rem;
+  color: #fff;
+  margin: 1rem 0.5rem;
+}
+
+main#payments .payments-content .di .content-hdr button {
+  background-color: #fff;
+  color: #000;
+}
+
+main#payments .payments-content .di .sidenav {
+  padding: 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#payments .payments-content .di .sidenav i {
+  font-size: 3rem;
+  margin: 1rem 0;
+  z-index: 3;
+  cursor: pointer;
+}
+
+main#payments .payments-content .di .sidenav ul {
+  padding: 1rem 3rem;
+  background: #f1f1f1;
+  border-radius: 2rem;
+  width: 30%;
+  position: absolute;
+  -webkit-box-shadow: 10px 10px 10px #cbcbcb;
+          box-shadow: 10px 10px 10px #cbcbcb;
+  top: 15rem;
+  right: 10rem;
+  visibility: hidden;
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+main#payments .payments-content .di .sidenav ul.show {
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+main#payments .payments-content .di .sidenav ul li {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+}
+
+main#payments .payments-content .di .sidenav ul li a {
+  padding: 1rem 6rem 1rem 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+main#payments .payments-content .di .sidenav ul li a:hover {
+  background: #e4e4e4;
+}
+
+main#payments .payments-content .di .sidenav ul li a.active {
+  background: #dadada;
+}
+
+main#payments .payments-content .di .sidenav ul li a.active:hover {
+  background: #dadada;
+}
+
+main#payments .payments-content .di .sidenav ul li a i {
+  font-size: 2rem;
+}
+
+main#payments .payments-content .payments-table {
+  padding: 5rem 3rem;
+}
+
+main#payments .payments-content .payments-table h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+main#payments .payments-content .payments-table table {
+  background-color: #f1f1f1;
+  width: 100%;
+  border-radius: 2rem;
+  padding: 5rem;
+}
+
+main#payments .payments-content .payments-table table tr th {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  width: 30%;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid #2997b9;
+}
+
+main#payments .payments-content .payments-table table tr td {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  width: 30%;
+  margin: 0;
+}
+
+main#payments .payments-content .payments-table table tr td:nth-child(1) {
+  border-right: 2px solid #2997b9;
+}
+
+main#payments .payments-content .payments-table table tr td:nth-child(2) {
+  border-right: 2px solid #2997b9;
+}
+
+main#patients .sidenav {
+  padding: 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#patients .sidenav i {
+  font-size: 3rem;
+  margin: 1rem 0;
+  z-index: 3;
+  cursor: pointer;
+}
+
+main#patients .sidenav ul {
+  padding: 1rem 3rem;
+  background: #f1f1f1;
+  border-radius: 2rem;
+  width: 30%;
+  position: absolute;
+  -webkit-box-shadow: 10px 10px 10px #cbcbcb;
+          box-shadow: 10px 10px 10px #cbcbcb;
+  top: 7rem;
+  left: 15rem;
+  visibility: hidden;
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+main#patients .sidenav ul.show {
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+main#patients .sidenav ul li {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0.5rem 0;
+}
+
+main#patients .sidenav ul li a {
+  padding: 1rem 6rem 1rem 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+main#patients .sidenav ul li a:hover {
+  background: #e4e4e4;
+}
+
+main#patients .sidenav ul li a.active {
+  background: #dadada;
+}
+
+main#patients .sidenav ul li a.active:hover {
+  background: #dadada;
+}
+
+main#patients .sidenav ul li a i {
+  font-size: 2rem;
+}
+
+main#patients .patients-wrapper {
+  padding: 5rem 3rem;
+}
+
+main#patients .patients-wrapper h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+main#patients .patients-wrapper .filter-form {
+  padding: 3rem 2rem;
+  background: #2997b9;
+  border-radius: 2rem;
+}
+
+main#patients .patients-wrapper .filter-form h4 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+main#patients .patients-wrapper .filter-form form {
+  padding: 2rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#patients .patients-wrapper .filter-form form .input {
+  width: 30%;
+}
+
+main#patients .patients-wrapper .filter-form form .input label {
+  font-size: 1rem;
+}
+
+main#patients .patients-wrapper .filter-form form .input select {
+  border: none;
+  border-bottom: 1px solid #061229;
+  padding: 0.5rem 1rem;
+  width: 60%;
+  color: #fff;
+  background: transparent;
+}
+
+main#patients .patients-wrapper .filter-form form .input select option {
+  color: #2997b9;
+  border: none;
+  outline: none;
+}
+
+main#patients .patients-wrapper .filter-form form button {
+  background: #061229;
+}
+
+main#patients .patients-wrapper .patients-table {
+  padding: 3rem 0;
+}
+
+main#patients .patients-wrapper .patients-table table {
+  background-color: #f1f1f1;
+  width: 100%;
+  border-radius: 2rem;
+  padding: 5rem;
+}
+
+main#patients .patients-wrapper .patients-table table tr th {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  width: 23%;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid #2997b9;
+}
+
+main#patients .patients-wrapper .patients-table table tr td {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  width: 23%;
+  margin: 0;
+}
+
+main#patients .patients-wrapper .patients-table table tr td:nth-child(1) {
+  border-right: 2px solid #2997b9;
+}
+
+main#patients .patients-wrapper .patients-table table tr td:nth-child(2) {
+  border-right: 2px solid #2997b9;
+}
+
+main#patients .patients-wrapper .patients-table table tr td:nth-child(3) {
+  border-right: 2px solid #2997b9;
+}
+
+main#patients .patients-wrapper .patients-table .total {
+  padding: 3rem 0;
+}
+
+main#patients .patients-wrapper .patients-table .total span {
+  padding: 3rem;
+  background: #2997b9;
+  border-radius: 2rem;
+  float: right;
+}
+
+main#patients .patients-wrapper .patients-table .total span h3 {
+  font-size: 2rem;
+  color: #061229;
+  font-weight: bold;
+}
+
+main#health-officer #health-page-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #fff;
+}
+
+main#health-officer #health-page-form.modal-form {
+  display: none;
+}
+
+main#health-officer #health-page-form.modal-form.active {
+  display: block;
+}
+
+main#health-officer #health-page-form .health-page-hdr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 5rem;
+  background: #2997b9;
+}
+
+main#health-officer #health-page-form .health-page-hdr span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#health-officer #health-page-form .health-page-hdr span i {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+main#health-officer #health-page-form .health-page-hdr span h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+main#health-officer #health-page-form .health-page-hdr i.lni-close {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+main#health-officer #health-page-form .health-page-hdr i.lni-close:hover {
+  cursor: pointer;
+}
+
+main#health-officer #health-page-form .health-form {
+  padding: 3rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#health-officer #health-page-form .health-form form {
+  width: 60%;
+  padding: 3rem 5rem;
+}
+
+main#health-officer #health-page-form .health-form form .input {
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main#health-officer #health-page-form .health-form form .input.hide {
+  display: none;
+}
+
+main#health-officer #health-page-form .health-form form .input label {
+  font-size: 1rem;
+  padding: 0.6rem 0;
+}
+
+main#health-officer #health-page-form .health-form form .input input {
+  width: 80%;
+  padding: 0.7rem 2rem 0.7rem 3rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #2383a0;
+  font-size: 1rem;
+  color: #000;
+}
+
+main#health-officer #health-page-form .health-form form .input i {
+  position: relative;
+  font-size: 1.5rem;
+  top: 2rem;
+  color: #2997b9;
+}
+
+main#health-officer #health-page-form .health-form form .form-txt {
+  padding: 2rem 0;
+}
+
+main#health-officer #health-page-form .health-form form .form-txt p {
+  font-size: 1rem;
+}
+
+main#health-officer #health-page-form .health-form form .form-txt p a {
+  text-decoration: none;
+  color: #2997b9;
+  font-size: 1.2rem;
+}
+
+main#health-officer #health-page-form .health-form .health-img {
+  width: 40%;
+  background: url(img/bg-2.svg);
+  background-size: cover;
+}
+
+main#health-officer #promotion {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+main#health-officer #promotion.modal-promote-form {
+  display: none;
+}
+
+main#health-officer #promotion.modal-promote-form.active {
+  display: block;
+}
+
+main#health-officer #promotion .promotion-hdr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 5rem;
+  background: #2997b9;
+}
+
+main#health-officer #promotion .promotion-hdr span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#health-officer #promotion .promotion-hdr span i {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+main#health-officer #promotion .promotion-hdr span h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+main#health-officer #promotion .promotion-hdr i.lni-close {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+main#health-officer #promotion .promotion-hdr i.lni-close:hover {
+  cursor: pointer;
+}
+
+main#health-officer #promotion .promotion-form {
+  padding: 3rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#health-officer #promotion .promotion-form form {
+  width: 60%;
+  padding: 3rem 5rem;
+}
+
+main#health-officer #promotion .promotion-form form .input {
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main#health-officer #promotion .promotion-form form .input label {
+  font-size: 1rem;
+  padding: 0.6rem 0;
+}
+
+main#health-officer #promotion .promotion-form form .input input {
+  width: 80%;
+  padding: 0.7rem 2rem 0.7rem 3rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #2383a0;
+  font-size: 1rem;
+  color: #000;
+}
+
+main#health-officer #promotion .promotion-form form .input i {
+  position: relative;
+  font-size: 1.5rem;
+  top: 2rem;
+  color: #2997b9;
+}
+
+main#health-officer #promotion .promotion-form form .form-txt {
+  padding: 2rem 0;
+}
+
+main#health-officer #promotion .promotion-form form .form-txt p {
+  font-size: 1rem;
+}
+
+main#health-officer #promotion .promotion-form form .form-txt p a {
+  text-decoration: none;
+  color: #2997b9;
+  font-size: 1.2rem;
+}
+
+main#health-officer #promotion .promotion-form .promotion-img {
+  width: 40%;
+  background: url(img/bg-2.svg);
+  background-size: cover;
+}
+
+main#health-officer .health-content .di {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 3rem;
+}
+
+main#health-officer .health-content .di .content-hdr {
+  padding: 5rem 5rem 3rem 5rem;
+  -webkit-box-shadow: 10px 10px 10px #1b647a;
+          box-shadow: 10px 10px 10px #1b647a;
+  background-color: #2997b9;
+  width: 650px;
+  border-radius: 2rem;
+}
+
+main#health-officer .health-content .di .content-hdr span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#health-officer .health-content .di .content-hdr span h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+main#health-officer .health-content .di .content-hdr span i {
+  font-size: 5rem;
+  color: #fff;
+  margin: 1rem 0.5rem;
+}
+
+main#health-officer .health-content .di .content-hdr button {
+  background-color: #fff;
+  color: #000;
+}
+
+main#health-officer .health-content .di .sidenav {
+  padding: 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#health-officer .health-content .di .sidenav i {
+  font-size: 3rem;
+  margin: 1rem 0;
+  z-index: 3;
+  cursor: pointer;
+}
+
+main#health-officer .health-content .di .sidenav ul {
+  padding: 1rem 3rem;
+  background: #f1f1f1;
+  border-radius: 2rem;
+  width: 30%;
+  position: absolute;
+  -webkit-box-shadow: 10px 10px 10px #cbcbcb;
+          box-shadow: 10px 10px 10px #cbcbcb;
+  top: 15rem;
+  right: 10rem;
+  visibility: hidden;
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+main#health-officer .health-content .di .sidenav ul.show {
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+main#health-officer .health-content .di .sidenav ul li {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+}
+
+main#health-officer .health-content .di .sidenav ul li a {
+  padding: 1rem 6rem 1rem 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+main#health-officer .health-content .di .sidenav ul li a:hover {
+  background: #e4e4e4;
+}
+
+main#health-officer .health-content .di .sidenav ul li a.active {
+  background: #dadada;
+}
+
+main#health-officer .health-content .di .sidenav ul li a.active:hover {
+  background: #dadada;
+}
+
+main#health-officer .health-content .di .sidenav ul li a i {
+  font-size: 2rem;
+}
+
+main#health-officer .health-table {
+  padding: 5rem 3rem;
+}
+
+main#health-officer .health-table h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+main#health-officer .health-table table {
+  background-color: #f1f1f1;
+  width: 100%;
+  border-radius: 2rem;
+  padding: 5rem;
+}
+
+main#health-officer .health-table table tr th {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  width: 30%;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid #2997b9;
+}
+
+main#health-officer .health-table table tr td {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  width: 30%;
+  margin: 0;
+}
+
+main#health-officer .health-table table tr td:nth-child(1) {
+  border-right: 2px solid #2997b9;
+}
+
+main#health-officer .health-table table tr td:nth-child(2) {
+  border-right: 2px solid #2997b9;
+}
+
+main#health-officer .health-table table tr td:nth-child(3) {
+  border-right: 2px solid #2997b9;
+}
+
+main#health-officer .health-table table tr td button.junior {
+  background: #0d7a16;
+}
+
+main#health-officer .health-table table tr td button.senior {
+  background: #061229;
+}
+
+main#health-officer .health-table table tr td button.deactivate {
+  display: none;
+}
+
+main a.btn-top {
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+main a.btn-top i {
+  position: fixed;
+  bottom: 3rem;
+  left: 3rem;
+  font-size: 3rem;
+  padding: 1rem;
+  color: #061229;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-radius: 20rem;
+  -webkit-animation: bounce 4s linear infinite 1s;
+          animation: bounce 4s linear infinite 1s;
+  -webkit-animation-timing-function: ease-Out;
+          animation-timing-function: ease-Out;
+}
+
+main a.btn-top i:hover {
+  background: #fff;
+  color: #2997b9;
+}
+
+main a.btn-top.hide {
+  display: none;
+}
+
+main a.btn-top.show {
+  display: block;
+}
+
+/* ------------------------------------------ footer ------------------------------------------------------------------------------------------------------------------------------------ */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2997b9;
+  padding: 2rem 3rem;
+}
+
+footer h3 {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+footer h3:nth-child(1) {
+  margin: 0 0.5rem;
+  border-right: 2px solid #fff;
+}
+
+footer h3:nth-child(2) {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    margin: 0 0 2rem 0;
+  }
+  20% {
+    margin: 2rem 0 0 0;
+  }
+  40% {
+    margin: 0 0 2rem 0;
+  }
+  60% {
+    margin: 2rem 0 0 0;
+  }
+  80% {
+    margin: 0 0 2rem 0;
+  }
+  100% {
+    margin: 2rem 0 0 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    margin: 0 0 2rem 0;
+  }
+  20% {
+    margin: 2rem 0 0 0;
+  }
+  40% {
+    margin: 0 0 2rem 0;
+  }
+  60% {
+    margin: 2rem 0 0 0;
+  }
+  80% {
+    margin: 0 0 2rem 0;
+  }
+  100% {
+    margin: 2rem 0 0 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
