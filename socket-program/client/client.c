@@ -109,7 +109,7 @@ int send_and_receive_data(struct PatientData c, int rcv)
 {
 	int hSocket, read_size;
 
-	//Create socket
+	// creating socket
     hSocket = SocketCreate();
     if(hSocket == -1)
     {
