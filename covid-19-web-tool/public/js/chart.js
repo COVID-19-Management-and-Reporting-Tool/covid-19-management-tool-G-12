@@ -10,6 +10,7 @@ const displayDonationsChart = () => {
         totalEnrollment = totalEnrollment + parseInt(target);
         dataValue.push(parseInt(target));
     });
+    //chart data here
 
     var ctx = document.getElementById('donChart').getContext('2d');
     var myChart = new Chart(ctx, {
@@ -144,6 +145,7 @@ const displayEnrollmentChart = () => {
 
     });
 }
+//functions for the two graphs
 
 displayDonationsChart();
 displayEnrollmentChart();

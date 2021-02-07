@@ -78,6 +78,7 @@
                 <div class="signup-img"></div>
             </div>
         </div>
+        //for registration
 
     </main>
 </body>

@@ -187,7 +187,7 @@ int main(){
 		strcpy(str3,str);
 		strcpy(str4,str);
 
-		// Check user input 
+	    // this checks user input
 		int result = check_input(str);
 		//printf("%d\n",result);
 		if(result == 1)
