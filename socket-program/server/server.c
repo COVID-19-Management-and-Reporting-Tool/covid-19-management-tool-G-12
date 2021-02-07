@@ -1,3 +1,4 @@
+//header files for the server
 #include<stdio.h>
 #include<string.h>
 #include<sys/socket.h>
@@ -291,6 +292,7 @@ int main(int argc, char *argv[])
 		}
                                          
 	} 
+//while loop keeps executing
 	close(sock);
 	sleep(1);
 	return 0;
