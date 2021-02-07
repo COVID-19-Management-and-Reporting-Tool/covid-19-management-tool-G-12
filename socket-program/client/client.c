@@ -15,7 +15,7 @@ short SocketCreate(void)
     hSocket = socket(AF_INET, SOCK_STREAM, 0);
     return hSocket;
 }
-//try to connect with server
+// trying to conect with the server
 int SocketConnect(int hSocket)
 {
     int iRetval=-1;
