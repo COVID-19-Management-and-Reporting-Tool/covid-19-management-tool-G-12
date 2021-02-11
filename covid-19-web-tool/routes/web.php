@@ -12,6 +12,7 @@ use App\Http\Controllers\indexController;
 
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -44,6 +45,9 @@ Route::get('/patient',function(){
 Route::get('/healthofficer',function(){
     return view('admin.healthofficer');
 });
+Route::get('/rank',function(){
+    return view('admin.rank');
+});
 
 Route::post('/donations',[DonationsController::class,'getDonations']);
 Route::get('/donations',[DonationsController::class,'donationList']);
@@ -51,11 +55,12 @@ Route::get('/index',[indexController::class,'counts']);
 
 Route::post('/healthofficer',[HealthOfficerController::class,'addOfficer']);
 Route::get('/healthofficer',[HealthOfficerController::class,'workerList']);
+Route::post('/rank',[HealthOfficerController::class,'Rank']);
 
 Route::get('/patient',[PatientController::class,'patientList']);
 
-//for paying up the officers
 Route::get('/payment',[AddPayment::class,'pay']);
+
 
 
 

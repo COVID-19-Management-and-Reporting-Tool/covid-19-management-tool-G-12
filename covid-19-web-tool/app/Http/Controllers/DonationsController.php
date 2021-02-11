@@ -29,7 +29,6 @@ class DonationsController extends Controller
         $donations= donation::all();
         return view('admin.donations',['donations'=>$donations]);
     }
-
     
 
    

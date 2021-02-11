@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateOfficersTable extends Migration
+class CreateBonusesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,18 +13,12 @@ class CreateOfficersTable extends Migration
      */
     public function up()
     {
-        Schema::create('officers', function (Blueprint $table) {
+        Schema::create('bonuses', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('category');
-            $table->integer('salary');
-            $table->string('title');
-            $table->integer('hospital');
-            $table->integer('award')->nullable();
-
+            $table->integer('amount');
             $table->timestamps();
         });
-        
     }
 
     /**
@@ -34,6 +28,6 @@ class CreateOfficersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('officers');
+        Schema::dropIfExists('bonuses');
     }
 }

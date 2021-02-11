@@ -90,46 +90,24 @@ class indexController extends Controller
         ->whereMonth('created_at','12')
         ->count();
         $total=db::table('officers')->count();
-        //promote to senior hospital
-        DB::table('officers')
-        ->where('category','general')
-        ->orderby('id')
-        ->chunkById(100,function($officers){
-            foreach($officers as $officer)
-            {
-                $count=DB::table('patients')
-                ->where('officer_name',$officer->name)
-                ->count();
-                if($count <=15)
-                {
-                    DB::table('officers')
-                    ->where('name',$officer->name)
-                    ->update(['category'=>'regional','title'=>'senior']);
-                }
-            }
-        });
-        //promote to national hospital
-        DB::table('officers')
-        ->where('category','regional')
-        ->orderby('id')
-        ->chunkById(100,function($officers){
-            foreach($officers as $officer)
-            {
-                $count=DB::table('patients')
-                ->where('officer_name',$officer->name)
-                ->count();
-                if($count <=100)
-                {
-                    DB::table('officers')
-                    ->where('name',$officer->name)
-                    ->update(['category'=>'national','title'=>'consultant']);
-                }
-            }
-        });
+
+   
+    
+
+
+     
+       
+        
+
+        
+        
+
+
+
+
         return view('admin.index',['jan'=>$jan,'feb'=>$feb,'mar'=>$mar,'apr'=>$apr,'may'=>$may,'jun'=>$jun,'jul'=>$jul,'aug'=>$aug,'sep'=>$sep,'oct'=>$oct,'nov'=>$nov,'dec'=>$dec,'cases'=>$cases,'workers'=>$workers,'ojan'=>$ojan,'ofeb'=>$ofeb,'omar'=>$omar,'oapr'=>$oapr,'omay'=>$omay,'ojun'=>$ojun,'ojul'=>$ojul,'oaug'=>$oaug,'osep'=>$osep,'ooct'=>$ooct,'onov'=>$onov,'odec'=>$odec,'total'=>$total]);
 
     }
-
     
     
 }
