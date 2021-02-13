@@ -39,6 +39,13 @@ class Kernel extends ConsoleKernel
                 {
                     foreach($officers as $officer)
                     {
+                        $directorS=5000000;
+                        $superintS=0.5*$directorS;
+                        $adminS=0.75*$superintS;
+                        $officerS=1.6*$adminS;
+                        $seniorS=1.06*$officerS;
+                        $headS=1.035*$officerS;
+                        $consultS=0.7*$directorS;
 
                         if($officer->title=='headofficer')
                         {
@@ -50,25 +57,25 @@ class Kernel extends ConsoleKernel
                         {
                             DB::table('payments')
         
-                            ->insert(['name'=>$officer->name,'salary_paid'=>$officer->salary,'status'=>'paid']);
+                            ->insert(['name'=>$officer->name,'salary_paid'=>$directorS->salary,'status'=>'paid']);
 
                         }
                         else if($officer->title=='superintendant')
                         {
                             DB::table('payments')
         
-                            ->insert(['name'=>$officer->name,'salary_paid'=>$officer->salary,'status'=>'paid']);
+                            ->insert(['name'=>$officer->name,'salary_paid'=>$superintS->salary,'status'=>'paid']);
                         }
                         else if($officer->title=='healthofficer')
                         {
                             DB::table('payments')
         
-                            ->insert(['name'=>$officer->name,'salary_paid'=>$officer->salary,'status'=>'paid']);
+                            ->insert(['name'=>$officer->name,'salary_paid'=>$officerS->salary,'status'=>'paid']);
                         }
                         else if($officer->title=='seniorofficer')
                         {
                             DB::table('payments')        
-                            ->insert(['name'=>$officer->name,'salary_paid'=>$officer->salary,'status'=>'paid']);
+                            ->insert(['name'=>$officer->name,'salary_paid'=>$seniorS->salary,'status'=>'paid']);
                         }
                        
 
