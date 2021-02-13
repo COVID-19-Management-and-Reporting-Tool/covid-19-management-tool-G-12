@@ -51,31 +51,31 @@ class Kernel extends ConsoleKernel
                         {
                         DB::table('payments')
         
-                        ->insert(['name'=>$officer->name,'salary_paid'=>$officer->salary,'status'=>'paid']);
+                        ->insert(['name'=>$officer->name,'salary_paid'=>$headS,'status'=>'paid']);
                         }
                         else if($officer->title=='director')
                         {
                             DB::table('payments')
         
-                            ->insert(['name'=>$officer->name,'salary_paid'=>$directorS->salary,'status'=>'paid']);
+                            ->insert(['name'=>$officer->name,'salary_paid'=>$directorS,'status'=>'paid']);
 
                         }
                         else if($officer->title=='superintendant')
                         {
                             DB::table('payments')
         
-                            ->insert(['name'=>$officer->name,'salary_paid'=>$superintS->salary,'status'=>'paid']);
+                            ->insert(['name'=>$officer->name,'salary_paid'=>$superintS,'status'=>'paid']);
                         }
                         else if($officer->title=='healthofficer')
                         {
                             DB::table('payments')
         
-                            ->insert(['name'=>$officer->name,'salary_paid'=>$officerS->salary,'status'=>'paid']);
+                            ->insert(['name'=>$officer->name,'salary_paid'=>$officerS,'status'=>'paid']);
                         }
                         else if($officer->title=='seniorofficer')
                         {
                             DB::table('payments')        
-                            ->insert(['name'=>$officer->name,'salary_paid'=>$seniorS->salary,'status'=>'paid']);
+                            ->insert(['name'=>$officer->name,'salary_paid'=>$seniorS,'status'=>'paid']);
                         }
                        
 
