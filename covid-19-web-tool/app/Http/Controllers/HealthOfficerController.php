@@ -8,6 +8,7 @@ use App\Models\officer;
 
 class HealthOfficerController extends Controller
 {
+   
     function addOfficer(Request $request)
     {
         $request->validate([
@@ -74,6 +75,12 @@ class HealthOfficerController extends Controller
         $hospFifty=DB::table('officers')
         ->where('hospital','50')
         ->count();
+        //salary structure
+                     $director=5000000;
+                     $superintendant=0.5 * $director;
+                     $healthofficer=1.6 *(0.75* $superintendant);
+                     $seniorOfficer=1.06 * $healthofficer;
+                     $headofficer=1.035 *$healthofficer;
 
         if($hospThirtyOne<=15)
         {
@@ -82,7 +89,7 @@ class HealthOfficerController extends Controller
         $officer->name=$request->fullname;
         $officer->title="healthofficer";
         $officer->hospital="31";
-        $officer->salary=3000000;
+        $officer->salary=$healthofficer;
         $officer->category="general";
         $query = $officer->save();
         }
@@ -93,7 +100,7 @@ class HealthOfficerController extends Controller
         $officer->name=$request->fullname;
         $officer->title="healthofficer";
         $officer->hospital="32";
-        $officer->salary=3000000;
+        $officer->salary=$healthofficer;
         $officer->category="general";
         $query = $officer->save();
         }
@@ -104,7 +111,7 @@ class HealthOfficerController extends Controller
         $officer->name=$request->fullname;
         $officer->title="healthofficer";
         $officer->hospital="33";
-        $officer->salary=3000000;
+        $officer->salary=$healthofficer;
         $officer->category="general";
         $query = $officer->save();
         }
@@ -115,7 +122,7 @@ class HealthOfficerController extends Controller
         $officer->name=$request->fullname;
         $officer->title="healthofficer";
         $officer->hospital="34";
-        $officer->salary=3000000;
+        $officer->salary=$healthofficer;
         $officer->category="general";
         $query = $officer->save();
         }
@@ -126,7 +133,7 @@ class HealthOfficerController extends Controller
         $officer->name=$request->fullname;
         $officer->title="healthofficer";
         $officer->hospital="35";
-        $officer->salary=3000000;
+        $officer->salary=$healthofficer;
         $officer->category="general";
         $query = $officer->save();
         }
@@ -137,7 +144,7 @@ class HealthOfficerController extends Controller
         $officer->name=$request->fullname;
         $officer->title="healthofficer";
         $officer->hospital="36";
-        $officer->salary=3000000;
+        $officer->salary=$healthofficer;
         $officer->category="general";
         $query = $officer->save();
         }
@@ -147,7 +154,7 @@ class HealthOfficerController extends Controller
         $officer->name=$request->fullname;
         $officer->title="healthofficer";
         $officer->hospital="37";
-        $officer->salary=3000000;
+        $officer->salary=$healthofficer;
         $officer->category="general";
         $query = $officer->save();
 
@@ -159,7 +166,7 @@ class HealthOfficerController extends Controller
             $officer->name=$request->fullname;
             $officer->title="healthofficer";
             $officer->hospital="38";
-            $officer->salary=3000000;
+            $officer->salary=$healthofficer;
             $officer->category="general";
             $query = $officer->save();
     
@@ -170,7 +177,7 @@ class HealthOfficerController extends Controller
                 $officer->name=$request->fullname;
                 $officer->title="healthofficer";
                 $officer->hospital="39";
-                $officer->salary=3000000;
+                $officer->salary=$healthofficer;
                 $officer->category="general";
                 $query = $officer->save();
         
@@ -182,7 +189,7 @@ class HealthOfficerController extends Controller
                     $officer->name=$request->fullname;
                     $officer->title="healthofficer";
                     $officer->hospital="40";
-                    $officer->salary=3000000;
+                    $officer->salary=$healthofficer;
                     $officer->category="general";
                     $query = $officer->save();
             
@@ -193,7 +200,7 @@ class HealthOfficerController extends Controller
                         $officer->name=$request->fullname;
                         $officer->title="healthofficer";
                         $officer->hospital="41";
-                        $officer->salary=3000000;
+                        $officer->salary=$healthofficer;
                         $officer->category="general";
                         $query = $officer->save();
                 
@@ -204,7 +211,7 @@ class HealthOfficerController extends Controller
                             $officer->name=$request->fullname;
                             $officer->title="healthofficer";
                             $officer->hospital="42";
-                            $officer->salary=3000000;
+                            $officer->salary=$healthofficer;
                             $officer->category="general";
                             $query = $officer->save();
                     
@@ -215,7 +222,7 @@ $officer=new officer;
 $officer->name=$request->fullname;
 $officer->title="healthofficer";
 $officer->hospital="43";
-$officer->salary=3000000;
+$officer->salary=$healthofficer;
 $officer->category="general";
 $query = $officer->save();
 
@@ -226,7 +233,7 @@ else if ($hospFourtyFour<=15){
     $officer->name=$request->fullname;
     $officer->title="healthofficer";
     $officer->hospital="44";
-    $officer->salary=3000000;
+    $officer->salary=$healthofficer;
     $officer->category="general";
     $query = $officer->save();
 
@@ -237,7 +244,7 @@ else if ($hospFourtyFour<=15){
         $officer->name=$request->fullname;
         $officer->title="healthofficer";
         $officer->hospital="45";
-        $officer->salary=3000000;
+        $officer->salary=$healthofficer;
         $officer->category="general";
         $query = $officer->save();
 
@@ -249,7 +256,7 @@ else if ($hospFourtyFour<=15){
             $officer->name=$request->fullname;
             $officer->title="healthofficer";
             $officer->hospital="46";
-            $officer->salary=3000000;
+            $officer->salary=$healthofficer;
             $officer->category="general";
             $query = $officer->save();
     
@@ -260,7 +267,7 @@ else if ($hospFourtyFour<=15){
                 $officer->name=$request->fullname;
                 $officer->title="healthofficer";
                 $officer->hospital="47";
-                $officer->salary=3000000;
+                $officer->salary=$healthofficer;
                 $officer->category="general";
                 $query = $officer->save();
         
@@ -271,7 +278,7 @@ else if ($hospFourtyFour<=15){
                     $officer->name=$request->fullname;
                     $officer->title="healthofficer";
                     $officer->hospital="48";
-                    $officer->salary=3000000;
+                    $officer->salary=$healthofficer;
                     $officer->category="general";
                     $query = $officer->save();
             
@@ -282,7 +289,7 @@ else if ($hospFourtyFour<=15){
                         $officer->name=$request->fullname;
                         $officer->title="healthofficer";
                         $officer->hospital="49";
-                        $officer->salary=3000000;
+                        $officer->salary=$healthofficer;
                         $officer->category="general";
                         $query = $officer->save();
                 
@@ -293,7 +300,7 @@ else if ($hospFourtyFour<=15){
             $officer->name=$request->fullname;
             $officer->title="healthofficer";
             $officer->hospital="50";
-            $officer->salary=3000000;
+            $officer->salary=$healthofficer;
             $officer->category="general";
             $query = $officer->save();
     
@@ -303,7 +310,7 @@ else if ($hospFourtyFour<=15){
                 $officer->name=$request->fullname;
                 $officer->title="healthofficer";
                 $officer->hospital="31";
-                $officer->salary=3000000;
+                $officer->salary=$healthofficer;
                 $officer->category="general";
                 $query = $officer->save();
 
@@ -328,6 +335,12 @@ else if ($hospFourtyFour<=15){
         ]);
 
         $head =officer::where('name',$req->name)->first();
+                    $director=5000000;
+                     $superintendant=0.5 * $director;
+                     $healthofficer=1.6 *(0.75* $superintendant);
+                     $seniorOfficer=1.06 * $healthofficer;
+                     $headofficer=1.035 *$healthofficer;
+                     $consultant=0.7 * $director;
 
         if($head)
         {
@@ -335,7 +348,7 @@ else if ($hospFourtyFour<=15){
             {
                 DB::table('officers')
                 ->where('name',$req->name)
-                ->update(['title'=>$req->Title,'salary'=>3105000]);
+                ->update(['title'=>$req->Title,'salary'=>$headofficer]);
                 return back()->with('success','officer has been made a headofficer');
         
 
@@ -345,7 +358,7 @@ else if ($hospFourtyFour<=15){
             {
                 DB::table('officers')
                 ->where('name',$req->name)
-                ->update(['title'=>$req->Title,'salary'=>5000000]);
+                ->update(['title'=>$req->Title,'salary'=>$director]);
                 return back()->with('success','officer has been made a director');
         
 
@@ -354,16 +367,8 @@ else if ($hospFourtyFour<=15){
             {
                 DB::table('officers')
                 ->where('name',$req->name)
-                ->update(['title'=>$req->Title,'salary'=>2500000]);
+                ->update(['title'=>$req->Title,'salary'=>$superintendant]);
                 return back()->with('success','officer has been made a superintendant');
-        
-            }
-            if($req->Title=='admin')
-            {
-                DB::table('officers')
-                ->where('name',$req->name)
-                ->update(['title'=>$req->Title,'salary'=>1875000]);
-                return back()->with('success','officer has been made an admin');
         
             }
             
@@ -382,4 +387,6 @@ else if ($hospFourtyFour<=15){
         return view('admin.healthofficer',['workers'=>$workers]);
 
     }
+
+    
 }

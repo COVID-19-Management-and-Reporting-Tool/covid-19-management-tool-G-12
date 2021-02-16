@@ -177,7 +177,7 @@ main#home .content .dashboard-sum h4 {
 
 main#home .content .dashboard-sum .gr {
   padding: 8rem 5rem;
-  background: url(/img/bg.jpg);
+  background: url(img/bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   border-radius: 2rem;
@@ -343,7 +343,7 @@ main#account #login-page .login-form form .form-txt p a {
 
 main#account #login-page .login-form .login-img {
   width: 40%;
-  background: url(/img/bg-2.svg);
+  background: url(img/bg-2.svg);
   background-size: cover;
 }
 
@@ -1452,7 +1452,7 @@ main#health-officer #promotion .promotion-form form .form-txt p a {
 
 main#health-officer #promotion .promotion-form .promotion-img {
   width: 40%;
-  background: url(/img/bg-2.svg);
+  background: url(img/bg-2.svg);
   background-size: cover;
 }
 
