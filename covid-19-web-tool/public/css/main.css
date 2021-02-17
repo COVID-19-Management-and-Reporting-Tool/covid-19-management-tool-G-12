@@ -578,7 +578,7 @@ main#donations #donation-page-form .donation-form form .form-txt p a {
 
 main#donations #donation-page-form .donation-form .donation-img {
   width: 40%;
-  background: url(/img/bg-2.svg);
+  background: url(img/bg-2.svg);
   background-size: cover;
 }
 
@@ -1324,7 +1324,7 @@ main#health-officer #health-page-form .health-form form .form-txt p a {
 
 main#health-officer #health-page-form .health-form .health-img {
   width: 40%;
-  background: url(/img/bg-2.svg);
+  background: url(img/bg-2.svg);
   background-size: cover;
 }
 
@@ -1452,7 +1452,7 @@ main#health-officer #promotion .promotion-form form .form-txt p a {
 
 main#health-officer #promotion .promotion-form .promotion-img {
   width: 40%;
-  background: url(img/bg-2.svg);
+  background: url(/img/bg-2.svg);
   background-size: cover;
 }
 

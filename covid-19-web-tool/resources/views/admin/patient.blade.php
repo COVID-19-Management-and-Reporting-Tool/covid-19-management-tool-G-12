@@ -33,11 +33,8 @@
             </ul>
         </div>
         <div class="patients-wrapper">
-            <h2>List of Patients</h2>
-            <div class="filter-form">
-                
-               
-            </div>
+        
+           
             <div class="patients-table">
                 <table>
                     <tr>
