@@ -21,22 +21,41 @@
                 </div>
             </nav>
         </div>
+        <div class="icon-nav">
+            <!-- ---------- pop up menu ----------------------------- -->
+          
         <div class="content">
-            <div class="sidenav">
+            <div class="sidenav hide-on-small">
                 <ul class="sidenav-menu">
                     <li class="sidenav-link"><a href="index" class="active"><i class="lni lni-dashboard"></i> Dashboad</a></li>
                     <li class="sidenav-link"><a href="donations"><i class="lni lni-money-location"></i> Donations</a></li>
                     <li class="sidenav-link"><a href="patient"><i class="lni lni-user"></i> Patients</a></li>
                     <li class="sidenav-link"><a href="payment"><i class="lni lni-coin"></i> Payments</a></li>
                     <li class="sidenav-link"><a href="healthofficer"><i class="lni lni-user"></i> Health Officers</a></li>
+                    <li class="sidenav-link"><a href="rank"><i class="lni lni-user"></i> Rank Officers</a></li>
                 </ul>
             </div>
+            <div class="sidenav hide-on-large" id="mobile">
+                <i class="lni lni-chevron-right hide-on-large" id="menu-btn"></i>
+                <ul class="sidenav-menu-mobile">
+                    <i class="lni lni-chevron-left" id="menu-btn-close"></i>
+                    <li class="sidenav-link"><a href="index" class="active"><i class="lni lni-dashboard"></i> Dashboad</a></li>
+                    <li class="sidenav-link"><a href="donations"><i class="lni lni-money-location"></i> Donations</a></li>
+                    <li class="sidenav-link"><a href="patient"><i class="lni lni-user"></i> Patients</a></li>
+                    <li class="sidenav-link"><a href="payment"><i class="lni lni-coin"></i> Payments</a></li>
+                    <li class="sidenav-link"><a href="healthofficer"><i class="lni lni-user"></i> Health Officers</a></li>
+
+                    <li class="sidenav-link"><a href="rank"><i class="lni lni-user"></i> Rank Officers</a></li>
+                </ul>
+            </div>
+
+
             <div class="dashboard-sum">
                 <h4>covid-19 summary report</h4>
                 <div class="gr gr-2">
                     <div class="sum-cases">
                         <h3>Total number of cases</h3>
-                        <p class="counter" data-target="{{$cases}}">{{$cases}}</p>
+                        <p class="counter" data-target="">{{$cases}}</p>
                     </div>
                     <!-- <div class="sum-recovery">
                         <h3>Recoveries</h3>
@@ -48,7 +67,7 @@
                     </div> -->
                     <div class="sum-workers">
                         <h3>Health Workers</h3>
-                        <p class="counter" data-target="{{$total}}">{{$total}}</p>
+                        <p class="counter" data-target="">{{$total}}</p>
                     </div>
                 </div>
 
@@ -59,14 +78,14 @@
                         <canvas class="donations-graph" id="donChart"></canvas>
                     </div>
                     <div class="enrollment-chart">
-                        <h4>monthly enrollment by percentage</h4>
+                        <h4>enrollment figures</h4>
                         <canvas class="enrollment-graph" id="enrollmentChart"></canvas>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- ----------------- back to top button - icon----------------------------------------------------------------------------------- -->
+        <!-- ----------------- back to top button ------------------------------------------------------------------------------------ -->
         <a class="btn-top hide"><i class="lni lni-chevron-up"></i></a>
     </main>
     <footer>
@@ -94,7 +113,7 @@
             <div id="data-set" class="Jan" data-target="{{$ojan}}"></div>
             <div id="data-set" class="Feb" data-target="{{$ofeb}}"></div>
             <div id="data-set" class="Mar" data-target="{{$omar}}"></div>
-            <div id="data-set" class="Apr" data-target="{{$oapr}}"></div>
+            <div id="data-set" class="Apr" data-target="{{$apr}}"></div>
             <div id="data-set" class="May" data-target="{{$omay}}"></div>
             <div id="data-set" class="Jun" data-target="{{$ojun}}"></div>
             <div id="data-set" class="Jul" data-target="{{$ojul}}"></div>
@@ -112,5 +131,7 @@
 <script src="assets/chart.js/Chart.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/chart.js"></script>
+<script src="js/sidenav.js"></script>
+
 
 </html>

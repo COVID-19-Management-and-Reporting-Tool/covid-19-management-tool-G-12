@@ -177,7 +177,7 @@ main#home .content .dashboard-sum h4 {
 
 main#home .content .dashboard-sum .gr {
   padding: 8rem 5rem;
-  background: url(/img/bg.jpg);
+  background: url(img/bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   border-radius: 2rem;
@@ -446,7 +446,7 @@ main#account #signup-page .signup-form form .form-txt p a {
 
 main#account #signup-page .signup-form .signup-img {
   width: 40%;
-  background: url(img/bg-3.svg);
+  background: url(/img/bg-3.svg);
   background-size: cover;
 }
 
@@ -578,7 +578,7 @@ main#donations #donation-page-form .donation-form form .form-txt p a {
 
 main#donations #donation-page-form .donation-form .donation-img {
   width: 40%;
-  background: url(img/bg-2.svg);
+  background: url(/img/bg-2.svg);
   background-size: cover;
 }
 
@@ -866,7 +866,7 @@ main#payments #payment-page-form .payment-form form .form-txt p a {
 
 main#payments #payment-page-form .payment-form .payment-img {
   width: 40%;
-  background: url(img/bg-2.svg);
+  background: url(/img/bg-2.svg);
   background-size: cover;
 }
 
@@ -1324,7 +1324,7 @@ main#health-officer #health-page-form .health-form form .form-txt p a {
 
 main#health-officer #health-page-form .health-form .health-img {
   width: 40%;
-  background: url(img/bg-2.svg);
+  background: url(/img/bg-2.svg);
   background-size: cover;
 }
 
@@ -1724,6 +1724,1138 @@ footer h3:nth-child(2) {
   }
   100% {
     margin: 2rem 0 0 0;
+  }
+}
+
+@media screen and (min-width: 1171px) {
+  .hide-on-large {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .hide-on-large {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hide-on-small {
+    display: none;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .nav-wrapper .nav-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2rem 1rem;
+  }
+  .nav-wrapper .nav-bar h2 a {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #268dac;
+  }
+  .nav-wrapper .nav-bar .nav-btns .btn {
+    margin: 0 0.3rem;
+    text-transform: uppercase;
+  }
+  main#home .icon-nav .logged-in {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main#home .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+  }
+  main#home .content .sidenav#mobile {
+    display: block;
+  }
+  main#home .content .sidenav#mobile i {
+    font-size: 3rem;
+    margin: 1rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  main#home .content .sidenav#mobile ul {
+    padding: 5rem 2rem 3rem 2rem;
+    background: #061229;
+    width: 50%;
+    border-radius: 0;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    visibility: hidden;
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  main#home .content .sidenav#mobile ul.show {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  main#home .content .sidenav#mobile ul i {
+    font-size: 3rem;
+    margin: 1rem 0;
+    color: #fff;
+    text-align: right;
+    z-index: 4;
+    cursor: pointer;
+  }
+  main#home .content .sidenav#mobile ul li {
+    list-style: none;
+    margin: 1rem 0;
+  }
+  main#home .content .sidenav#mobile ul li a {
+    padding: 0.8rem 3rem 0.8rem 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  main#home .content .sidenav#mobile ul li a:hover {
+    background: #e4e4e4;
+  }
+  main#home .content .sidenav#mobile ul li a.active {
+    background: #dadada;
+  }
+  main#home .content .sidenav#mobile ul li a.active:hover {
+    background: #dadada;
+  }
+  main#home .content .sidenav#mobile ul li a i {
+    font-size: 2rem;
+  }
+  main#home .content .dashboard-sum {
+    width: 100%;
+    padding: 5rem 1rem;
+    border-radius: 2rem;
+    background: #fff;
+  }
+  main#home .content .dashboard-sum h4 {
+    font-size: 2rem;
+  }
+  main#home .content .dashboard-sum .gr {
+    padding: 3rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main#home .content .dashboard-sum .charts h3 {
+    font-size: 2rem;
+  }
+  main#home .content .dashboard-sum .charts .donations-chart {
+    padding: 2rem 0;
+  }
+  main#home .content .dashboard-sum .charts .donations-chart h4 {
+    font-size: 1.5rem;
+  }
+  main#home .content .dashboard-sum .charts .enrollment-chart {
+    padding: 2rem 0;
+  }
+  main#home .content .dashboard-sum .charts .enrollment-chart h4 {
+    font-size: 1.5rem;
+  }
+  main#account #login-page .login-page-hdr {
+    padding: 1rem 2rem;
+  }
+  main#account #login-page .login-page-hdr span h2 {
+    font-size: 1.5rem;
+  }
+  main#account #login-page .login-form {
+    display: block;
+    padding: 3rem 2rem;
+  }
+  main#account #login-page .login-form form {
+    padding: 3rem 2rem;
+    width: 100%;
+  }
+  main#account #signup-page .signup-page-hdr {
+    padding: 1rem 2rem;
+  }
+  main#account #signup-page .signup-page-hdr span h2 {
+    font-size: 1.5rem;
+  }
+  main#account #signup-page .signup-form {
+    display: block;
+    padding: 3rem 2rem;
+  }
+  main#account #signup-page .signup-form form {
+    padding: 3rem 2rem;
+    width: 100%;
+  }
+  main#donations #donation-page-form .donation-page-hdr {
+    padding: 1.5rem 2rem;
+  }
+  main#donations #donation-page-form .donation-page-hdr span i {
+    font-size: 2rem;
+  }
+  main#donations #donation-page-form .donation-page-hdr span h2 {
+    font-size: 1.5rem;
+  }
+  main#donations #donation-page-form .donation-page-hdr i.lni-close {
+    font-size: 2rem;
+  }
+  main#donations #donation-page-form .donation-form {
+    display: block;
+    padding: 3rem 2rem;
+  }
+  main#donations #donation-page-form .donation-form form {
+    padding: 3rem 2rem;
+    width: 100%;
+  }
+  main#donations #donation-page-form .donation-form form .input input {
+    width: 100%;
+  }
+  main#donations .donations-content .di {
+    padding: 0;
+  }
+  main#donations .donations-content .di .content-hdr {
+    padding: 5rem 2rem;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+  }
+  main#donations .donations-content .di .content-hdr span h2 {
+    font-size: 2rem;
+  }
+  main#donations .donations-content .di .content-hdr span i {
+    font-size: 3rem;
+  }
+  main#donations .donations-content .di .sidenav {
+    position: absolute;
+    right: 0;
+  }
+  main#donations .donations-content .di .sidenav i {
+    color: #fff;
+  }
+  main#donations .donations-content .di .sidenav ul {
+    background: #061229;
+    top: 5rem;
+    right: 2rem;
+    width: 300px;
+    padding: 2rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  main#donations .donations-content .di .sidenav ul li a {
+    padding: 1rem 4rem 1rem 1rem;
+    color: #fff;
+  }
+  main#donations .donations-content .di .sidenav ul li a:hover {
+    background: #2486a4;
+  }
+  main#donations .donations-content .di .sidenav ul li a.active {
+    background: #217893;
+  }
+  main#donations .donations-content .di .sidenav ul li a.active:hover {
+    background: #217893;
+  }
+  main#donations .donations-content .donations-table {
+    padding: 5rem 0rem;
+    margin: 0;
+    overflow: hidden;
+  }
+  main#donations .donations-content .donations-table h3 {
+    padding: 1rem 2rem;
+  }
+  main#donations .donations-content .donations-table table {
+    border-radius: 0;
+    overflow: hidden;
+    padding: 3rem 0;
+  }
+  main#donations .donations-content .donations-table table tr th {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 20%;
+  }
+  main#donations .donations-content .donations-table table tr td {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    width: 20%;
+    margin: 0;
+  }
+  main#patients .sidenav {
+    position: absolute;
+    left: 0;
+  }
+  main#patients .sidenav i {
+    color: #fff;
+  }
+  main#patients .sidenav ul {
+    background: #061229;
+    top: 5rem;
+    left: 2rem;
+    width: 300px;
+    padding: 2rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  main#patients .sidenav ul li a {
+    padding: 1rem 4rem 1rem 1rem;
+    color: #fff;
+  }
+  main#patients .sidenav ul li a:hover {
+    background: #2486a4;
+  }
+  main#patients .sidenav ul li a.active {
+    background: #217893;
+  }
+  main#patients .sidenav ul li a.active:hover {
+    background: #217893;
+  }
+  main#patients .patients-wrapper {
+    padding: 2rem 0;
+  }
+  main#patients .patients-wrapper h2 {
+    padding: 0 1rem;
+  }
+  main#patients .patients-wrapper .filter-form {
+    padding: 2rem 0.5rem;
+    border-radius: 0;
+    margin: 0;
+  }
+  main#patients .patients-wrapper .filter-form form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 1rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  main#patients .patients-wrapper .filter-form form .input {
+    margin: 1rem 0;
+    width: 90%;
+  }
+  main#patients .patients-wrapper .filter-form form .input select {
+    width: 90%;
+  }
+  main#patients .patients-wrapper .filter-form form button {
+    padding: 0.3rem 0.5rem !important;
+  }
+  main#patients .patients-wrapper .patients-table {
+    padding: 5rem 0rem;
+    margin: 0;
+  }
+  main#patients .patients-wrapper .patients-table h3 {
+    padding: 1rem 2rem;
+  }
+  main#patients .patients-wrapper .patients-table table {
+    border-radius: 0;
+    overflow: auto;
+    padding: 3rem 0;
+  }
+  main#patients .patients-wrapper .patients-table table tr th {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 30%;
+  }
+  main#patients .patients-wrapper .patients-table table tr td {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    width: 30%;
+    margin: 0;
+  }
+  main#patients .patients-wrapper .patients-table .total {
+    padding: 2rem 1rem;
+  }
+  main#patients .patients-wrapper .patients-table .total span {
+    padding: 2rem 1rem;
+    background: #2997b9;
+    border-radius: 2rem;
+    float: right;
+  }
+  main#patients .patients-wrapper .patients-table .total span h3 {
+    font-size: 1rem;
+    color: #061229;
+    font-weight: bold;
+  }
+  main#payments #payment-page-form .payment-page-hdr {
+    padding: 1.5rem 2rem;
+  }
+  main#payments #payment-page-form .payment-page-hdr span i {
+    font-size: 2rem;
+  }
+  main#payments #payment-page-form .payment-page-hdr span h2 {
+    font-size: 1.5rem;
+  }
+  main#payments #payment-page-form .payment-page-hdr i.lni-close {
+    font-size: 2rem;
+  }
+  main#payments #payment-page-form .payment-form {
+    display: block;
+    padding: 3rem 2rem;
+  }
+  main#payments #payment-page-form .payment-form form {
+    padding: 3rem 2rem;
+    width: 100%;
+  }
+  main#payments #payment-page-form .payment-form form .input input {
+    width: 100%;
+  }
+  main#payments .payments-content .di {
+    padding: 0;
+  }
+  main#payments .payments-content .di .content-hdr {
+    padding: 5rem 2rem;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+  }
+  main#payments .payments-content .di .content-hdr span h2 {
+    font-size: 2rem;
+  }
+  main#payments .payments-content .di .content-hdr span i {
+    font-size: 3rem;
+  }
+  main#payments .payments-content .di .sidenav {
+    position: absolute;
+    right: 0;
+  }
+  main#payments .payments-content .di .sidenav i {
+    color: #fff;
+  }
+  main#payments .payments-content .di .sidenav ul {
+    background: #061229;
+    top: 5rem;
+    right: 2rem;
+    width: 300px;
+    padding: 2rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  main#payments .payments-content .di .sidenav ul li a {
+    padding: 1rem 4rem 1rem 1rem;
+    color: #fff;
+  }
+  main#payments .payments-content .di .sidenav ul li a:hover {
+    background: #2486a4;
+  }
+  main#payments .payments-content .di .sidenav ul li a.active {
+    background: #217893;
+  }
+  main#payments .payments-content .di .sidenav ul li a.active:hover {
+    background: #217893;
+  }
+  main#payments .payments-content .payments-table {
+    padding: 5rem 0rem;
+    margin: 0;
+    overflow: hidden;
+  }
+  main#payments .payments-content .payments-table h3 {
+    padding: 1rem 2rem;
+  }
+  main#payments .payments-content .payments-table table {
+    border-radius: 0;
+    overflow: hidden;
+    padding: 3rem 0;
+  }
+  main#payments .payments-content .payments-table table tr th {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 20%;
+  }
+  main#payments .payments-content .payments-table table tr td {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    width: 20%;
+    margin: 0;
+  }
+  main#health-officer #health-page-form .health-page-hdr {
+    padding: 1.5rem 2rem;
+  }
+  main#health-officer #health-page-form .health-page-hdr span i {
+    font-size: 2rem;
+  }
+  main#health-officer #health-page-form .health-page-hdr span h2 {
+    font-size: 1.5rem;
+  }
+  main#health-officer #health-page-form .health-page-hdr i.lni-close {
+    font-size: 2rem;
+  }
+  main#health-officer #health-page-form .health-form {
+    display: block;
+    padding: 3rem 2rem;
+  }
+  main#health-officer #health-page-form .health-form form {
+    padding: 3rem 2rem;
+    width: 100%;
+  }
+  main#health-officer #health-page-form .health-form form .input input {
+    width: 100%;
+  }
+  main#health-officer .health-content .di {
+    padding: 0;
+  }
+  main#health-officer .health-content .di .content-hdr {
+    padding: 5rem 2rem;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+  }
+  main#health-officer .health-content .di .content-hdr span h2 {
+    font-size: 2rem;
+  }
+  main#health-officer .health-content .di .content-hdr span i {
+    font-size: 3rem;
+  }
+  main#health-officer .health-content .di .sidenav {
+    position: absolute;
+    right: 0;
+  }
+  main#health-officer .health-content .di .sidenav i {
+    color: #fff;
+  }
+  main#health-officer .health-content .di .sidenav ul {
+    background: #061229;
+    top: 5rem;
+    right: 2rem;
+    width: 300px;
+    padding: 2rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  main#health-officer .health-content .di .sidenav ul li a {
+    padding: 1rem 4rem 1rem 1rem;
+    color: #fff;
+  }
+  main#health-officer .health-content .di .sidenav ul li a:hover {
+    background: #2486a4;
+  }
+  main#health-officer .health-content .di .sidenav ul li a.active {
+    background: #217893;
+  }
+  main#health-officer .health-content .di .sidenav ul li a.active:hover {
+    background: #217893;
+  }
+  main#health-officer .health-content .health-table {
+    padding: 5rem 0rem;
+    margin: 0;
+  }
+  main#health-officer .health-content .health-table h3 {
+    padding: 1rem 2rem;
+  }
+  main#health-officer .health-content .health-table table {
+    border-radius: 0;
+    overflow: auto;
+    padding: 3rem 0;
+  }
+  main#health-officer .health-content .health-table table tr th {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 20%;
+  }
+  main#health-officer .health-content .health-table table tr td {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    width: 20%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hide-on-small {
+    display: none;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .nav-wrapper .nav-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2rem 1rem;
+  }
+  .nav-wrapper .nav-bar h2 a {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #268dac;
+  }
+  .nav-wrapper .nav-bar .nav-btns .btn {
+    margin: 0 0.3rem;
+    text-transform: uppercase;
+  }
+  main#home .icon-nav .logged-in {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main#home .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+  }
+  main#home .content .sidenav#mobile {
+    display: block;
+  }
+  main#home .content .sidenav#mobile i {
+    font-size: 3rem;
+    margin: 1rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  main#home .content .sidenav#mobile ul {
+    padding: 5rem 2rem 3rem 2rem;
+    background: #061229;
+    width: 50%;
+    border-radius: 0;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    visibility: hidden;
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  main#home .content .sidenav#mobile ul.show {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  main#home .content .sidenav#mobile ul i {
+    font-size: 3rem;
+    margin: 1rem 0;
+    color: #fff;
+    text-align: right;
+    z-index: 4;
+    cursor: pointer;
+  }
+  main#home .content .sidenav#mobile ul li {
+    list-style: none;
+    margin: 1rem 0;
+  }
+  main#home .content .sidenav#mobile ul li a {
+    padding: 0.8rem 3rem 0.8rem 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  main#home .content .sidenav#mobile ul li a:hover {
+    background: #e4e4e4;
+  }
+  main#home .content .sidenav#mobile ul li a.active {
+    background: #dadada;
+  }
+  main#home .content .sidenav#mobile ul li a.active:hover {
+    background: #dadada;
+  }
+  main#home .content .sidenav#mobile ul li a i {
+    font-size: 2rem;
+  }
+  main#home .content .dashboard-sum {
+    width: 100%;
+    padding: 5rem 1rem;
+    border-radius: 2rem;
+    background: #fff;
+  }
+  main#home .content .dashboard-sum h4 {
+    font-size: 2rem;
+  }
+  main#home .content .dashboard-sum .gr {
+    padding: 3rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main#home .content .dashboard-sum .charts h3 {
+    font-size: 2rem;
+  }
+  main#home .content .dashboard-sum .charts .donations-chart {
+    padding: 2rem 0;
+  }
+  main#home .content .dashboard-sum .charts .donations-chart h4 {
+    font-size: 1.5rem;
+  }
+  main#home .content .dashboard-sum .charts .enrollment-chart {
+    padding: 2rem 0;
+  }
+  main#home .content .dashboard-sum .charts .enrollment-chart h4 {
+    font-size: 1.5rem;
+  }
+  main#account #login-page .login-page-hdr {
+    padding: 1rem 2rem;
+  }
+  main#account #login-page .login-page-hdr span h2 {
+    font-size: 1.5rem;
+  }
+  main#account #login-page .login-form {
+    display: block;
+    padding: 3rem 2rem;
+  }
+  main#account #login-page .login-form form {
+    padding: 3rem 2rem;
+    width: 100%;
+  }
+  main#account #login-page .login-form form .input input {
+    width: 100%;
+  }
+  main#account #signup-page .signup-page-hdr {
+    padding: 1rem 2rem;
+  }
+  main#account #signup-page .signup-page-hdr span h2 {
+    font-size: 1.5rem;
+  }
+  main#account #signup-page .signup-form {
+    display: block;
+    padding: 3rem 2rem;
+  }
+  main#account #signup-page .signup-form form {
+    padding: 3rem 2rem;
+    width: 100%;
+  }
+  main#account #signup-page .signup-form form .input input {
+    width: 100%;
+  }
+  main#donations #donation-page-form .donation-page-hdr {
+    padding: 1.5rem 2rem;
+  }
+  main#donations #donation-page-form .donation-page-hdr span i {
+    font-size: 2rem;
+  }
+  main#donations #donation-page-form .donation-page-hdr span h2 {
+    font-size: 1.5rem;
+  }
+  main#donations #donation-page-form .donation-page-hdr i.lni-close {
+    font-size: 2rem;
+  }
+  main#donations #donation-page-form .donation-form {
+    display: block;
+    padding: 3rem 2rem;
+  }
+  main#donations #donation-page-form .donation-form form {
+    padding: 3rem 2rem;
+    width: 100%;
+  }
+  main#donations #donation-page-form .donation-form form .input input {
+    width: 100%;
+  }
+  main#donations .donations-content .di {
+    padding: 0;
+  }
+  main#donations .donations-content .di .content-hdr {
+    padding: 5rem 2rem;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+  }
+  main#donations .donations-content .di .content-hdr span h2 {
+    font-size: 2rem;
+  }
+  main#donations .donations-content .di .content-hdr span i {
+    font-size: 3rem;
+  }
+  main#donations .donations-content .di .sidenav {
+    position: absolute;
+    right: 0;
+  }
+  main#donations .donations-content .di .sidenav i {
+    color: #fff;
+  }
+  main#donations .donations-content .di .sidenav ul {
+    background: #061229;
+    top: 5rem;
+    right: 2rem;
+    width: 300px;
+    padding: 2rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  main#donations .donations-content .di .sidenav ul li a {
+    padding: 1rem 4rem 1rem 1rem;
+    color: #fff;
+  }
+  main#donations .donations-content .di .sidenav ul li a:hover {
+    background: #2486a4;
+  }
+  main#donations .donations-content .di .sidenav ul li a.active {
+    background: #217893;
+  }
+  main#donations .donations-content .di .sidenav ul li a.active:hover {
+    background: #217893;
+  }
+  main#donations .donations-content .donations-table {
+    padding: 5rem 0rem;
+    margin: 0;
+    overflow: hidden;
+  }
+  main#donations .donations-content .donations-table h3 {
+    padding: 1rem 2rem;
+  }
+  main#donations .donations-content .donations-table table {
+    border-radius: 0;
+    overflow: hidden;
+    padding: 3rem 0;
+  }
+  main#donations .donations-content .donations-table table tr th {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 20%;
+  }
+  main#donations .donations-content .donations-table table tr td {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    width: 20%;
+    margin: 0;
+  }
+  main#patients .sidenav {
+    position: absolute;
+    left: 0;
+  }
+  main#patients .sidenav i {
+    color: #fff;
+  }
+  main#patients .sidenav ul {
+    background: #061229;
+    top: 5rem;
+    left: 2rem;
+    width: 300px;
+    padding: 2rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  main#patients .sidenav ul li a {
+    padding: 1rem 4rem 1rem 1rem;
+    color: #fff;
+  }
+  main#patients .sidenav ul li a:hover {
+    background: #2486a4;
+  }
+  main#patients .sidenav ul li a.active {
+    background: #217893;
+  }
+  main#patients .sidenav ul li a.active:hover {
+    background: #217893;
+  }
+  main#patients .patients-wrapper {
+    padding: 2rem 0;
+  }
+  main#patients .patients-wrapper h2 {
+    padding: 0 1rem;
+  }
+  main#patients .patients-wrapper .filter-form {
+    padding: 2rem 0.5rem;
+    border-radius: 0;
+    margin: 0;
+  }
+  main#patients .patients-wrapper .filter-form form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 1rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  main#patients .patients-wrapper .filter-form form .input {
+    margin: 1rem 0;
+    width: 90%;
+  }
+  main#patients .patients-wrapper .filter-form form .input select {
+    width: 90%;
+  }
+  main#patients .patients-wrapper .filter-form form button {
+    padding: 0.3rem 0.5rem !important;
+  }
+  main#patients .patients-wrapper .patients-table {
+    padding: 5rem 0rem;
+    margin: 0;
+  }
+  main#patients .patients-wrapper .patients-table h3 {
+    padding: 1rem 2rem;
+  }
+  main#patients .patients-wrapper .patients-table table {
+    border-radius: 0;
+    overflow: auto;
+    padding: 3rem 0;
+  }
+  main#patients .patients-wrapper .patients-table table tr th {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 30%;
+  }
+  main#patients .patients-wrapper .patients-table table tr td {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    width: 30%;
+    margin: 0;
+  }
+  main#patients .patients-wrapper .patients-table .total {
+    padding: 2rem 1rem;
+  }
+  main#patients .patients-wrapper .patients-table .total span {
+    padding: 2rem 1rem;
+    background: #2997b9;
+    border-radius: 2rem;
+    float: right;
+  }
+  main#patients .patients-wrapper .patients-table .total span h3 {
+    font-size: 1rem;
+    color: #061229;
+    font-weight: bold;
+  }
+  main#payments #payment-page-form .payment-page-hdr {
+    padding: 1.5rem 2rem;
+  }
+  main#payments #payment-page-form .payment-page-hdr span i {
+    font-size: 2rem;
+  }
+  main#payments #payment-page-form .payment-page-hdr span h2 {
+    font-size: 1.5rem;
+  }
+  main#payments #payment-page-form .payment-page-hdr i.lni-close {
+    font-size: 2rem;
+  }
+  main#payments #payment-page-form .payment-form {
+    display: block;
+    padding: 3rem 2rem;
+  }
+  main#payments #payment-page-form .payment-form form {
+    padding: 3rem 2rem;
+    width: 100%;
+  }
+  main#payments #payment-page-form .payment-form form .input input {
+    width: 100%;
+  }
+  main#payments .payments-content .di {
+    padding: 0;
+  }
+  main#payments .payments-content .di .content-hdr {
+    padding: 5rem 2rem;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+  }
+  main#payments .payments-content .di .content-hdr span h2 {
+    font-size: 2rem;
+  }
+  main#payments .payments-content .di .content-hdr span i {
+    font-size: 3rem;
+  }
+  main#payments .payments-content .di .sidenav {
+    position: absolute;
+    right: 0;
+  }
+  main#payments .payments-content .di .sidenav i {
+    color: #fff;
+  }
+  main#payments .payments-content .di .sidenav ul {
+    background: #061229;
+    top: 5rem;
+    right: 2rem;
+    width: 300px;
+    padding: 2rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  main#payments .payments-content .di .sidenav ul li a {
+    padding: 1rem 4rem 1rem 1rem;
+    color: #fff;
+  }
+  main#payments .payments-content .di .sidenav ul li a:hover {
+    background: #2486a4;
+  }
+  main#payments .payments-content .di .sidenav ul li a.active {
+    background: #217893;
+  }
+  main#payments .payments-content .di .sidenav ul li a.active:hover {
+    background: #217893;
+  }
+  main#payments .payments-content .payments-table {
+    padding: 5rem 0rem;
+    margin: 0;
+    overflow: hidden;
+  }
+  main#payments .payments-content .payments-table h3 {
+    padding: 1rem 2rem;
+  }
+  main#payments .payments-content .payments-table table {
+    border-radius: 0;
+    overflow: hidden;
+    padding: 3rem 0;
+  }
+  main#payments .payments-content .payments-table table tr th {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 20%;
+  }
+  main#payments .payments-content .payments-table table tr td {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    width: 20%;
+    margin: 0;
+  }
+  main#health-officer #health-page-form .health-page-hdr {
+    padding: 1.5rem 2rem;
+  }
+  main#health-officer #health-page-form .health-page-hdr span i {
+    font-size: 2rem;
+  }
+  main#health-officer #health-page-form .health-page-hdr span h2 {
+    font-size: 1.5rem;
+  }
+  main#health-officer #health-page-form .health-page-hdr i.lni-close {
+    font-size: 2rem;
+  }
+  main#health-officer #health-page-form .health-form {
+    display: block;
+    padding: 3rem 2rem;
+  }
+  main#health-officer #health-page-form .health-form form {
+    padding: 3rem 2rem;
+    width: 100%;
+  }
+  main#health-officer #health-page-form .health-form form .input input {
+    width: 100%;
+  }
+  main#health-officer .health-content .di {
+    padding: 0;
+  }
+  main#health-officer .health-content .di .content-hdr {
+    padding: 5rem 2rem;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+  }
+  main#health-officer .health-content .di .content-hdr span h2 {
+    font-size: 2rem;
+  }
+  main#health-officer .health-content .di .content-hdr span i {
+    font-size: 3rem;
+  }
+  main#health-officer .health-content .di .sidenav {
+    position: absolute;
+    right: 0;
+  }
+  main#health-officer .health-content .di .sidenav i {
+    color: #fff;
+  }
+  main#health-officer .health-content .di .sidenav ul {
+    background: #061229;
+    top: 5rem;
+    right: 2rem;
+    width: 300px;
+    padding: 2rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  main#health-officer .health-content .di .sidenav ul li a {
+    padding: 1rem 4rem 1rem 1rem;
+    color: #fff;
+  }
+  main#health-officer .health-content .di .sidenav ul li a:hover {
+    background: #2486a4;
+  }
+  main#health-officer .health-content .di .sidenav ul li a.active {
+    background: #217893;
+  }
+  main#health-officer .health-content .di .sidenav ul li a.active:hover {
+    background: #217893;
+  }
+  main#health-officer .health-content .health-table {
+    padding: 5rem 0rem;
+    margin: 0;
+  }
+  main#health-officer .health-content .health-table h3 {
+    padding: 1rem 2rem;
+  }
+  main#health-officer .health-content .health-table table {
+    border-radius: 0;
+    overflow: auto;
+    padding: 3rem 0;
+  }
+  main#health-officer .health-content .health-table table tr th {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 20%;
+  }
+  main#health-officer .health-content .health-table table tr td {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    width: 20%;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

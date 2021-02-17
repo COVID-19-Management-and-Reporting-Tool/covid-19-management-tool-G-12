@@ -1,0 +1,1227 @@
+// Wide screens
+@include mediaXL {
+    .hide-on-large {
+        display: none;
+    }
+}
+
+// desktop and laptop screens
+@include mediaLg {
+    .hide-on-large {
+        display: none;
+    }
+}
+
+// medium screens
+@include mediaMd {
+    .hide-on-small {
+        display: none;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .nav-wrapper {
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 1rem;
+            h2 {
+                a {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: darken($secondary-color, 3);
+                }
+            }
+            .nav-btns {
+                .btn {
+                    margin: 0 0.3rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    main {
+        &#home {
+            .icon-nav {
+                .logged-in {
+                    display: flex;
+                }
+            }
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0;
+                .sidenav {
+                    &#mobile {
+                        display: block;
+                        i {
+                            font-size: 3rem;
+                            margin: 1rem;
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                        ul {
+                            padding: 5rem 2rem 3rem 2rem;
+                            background: $primary-color;
+                            width: 50%;
+                            border-radius: 0;
+                            position: fixed;
+                            display: flex;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            flex-direction: column;
+                            visibility: hidden;
+                            transform: translate3d(-50%, 0, 0);
+                            @include easeOut;
+                            &.show {
+                                visibility: visible;
+                                transform: translate3d(0, 0, 0);
+                            }
+                            i {
+                                font-size: 3rem;
+                                margin: 1rem 0;
+                                color: #fff;
+                                text-align: right;
+                                z-index: 4;
+                                cursor: pointer;
+                            }
+                            li {
+                                list-style: none;
+                                margin: 1rem 0;
+                                a {
+                                    padding: 0.8rem 3rem 0.8rem 1rem;
+                                    border-radius: 1rem;
+                                    width: 100%;
+                                    font-size: 1.3rem;
+                                    &:hover {
+                                        background: darken(rgb(241, 241, 241), 5);
+                                    }
+                                    &.active {
+                                        background: darken(rgb(241, 241, 241), 9);
+                                        &:hover {
+                                            background: darken(rgb(241, 241, 241), 9);
+                                        }
+                                    }
+                                    i {
+                                        font-size: 2rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .dashboard-sum {
+                    width: 100%;
+                    padding: 5rem 1rem;
+                    border-radius: 2rem;
+                    background: #fff;
+                    h4 {
+                        font-size: 2rem;
+                    }
+                    .gr {
+                        padding: 3rem 2rem;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .charts {
+                        h3 {
+                            font-size: 2rem;
+                        }
+                        .donations-chart {
+                            padding: 2rem 0;
+                            h4 {
+                                font-size: 1.5rem;
+                            }
+                        }
+                        .enrollment-chart {
+                            padding: 2rem 0;
+                            h4 {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#account {
+            #login-page {
+                .login-page-hdr {
+                    padding: 1rem 2rem;
+                    span {
+                        h2 {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+                .login-form {
+                    display: block;
+                    padding: 3rem 2rem;
+                    form {
+                        padding: 3rem 2rem;
+                        width: 100%;
+                    }
+                }
+            }
+            #signup-page {
+                .signup-page-hdr {
+                    padding: 1rem 2rem;
+                    span {
+                        h2 {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+                .signup-form {
+                    display: block;
+                    padding: 3rem 2rem;
+                    form {
+                        padding: 3rem 2rem;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &#donations {
+            #donation-page-form {
+                .donation-page-hdr {
+                    padding: 1.5rem 2rem;
+                    span {
+                        i {
+                            font-size: 2rem;
+                        }
+                        h2 {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    i {
+                        &.lni-close {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                .donation-form {
+                    display: block;
+                    padding: 3rem 2rem;
+                    form {
+                        padding: 3rem 2rem;
+                        width: 100%;
+                        .input {
+                            input {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .donations-content {
+                .di {
+                    padding: 0;
+                    .content-hdr {
+                        padding: 5rem 2rem;
+                        width: 100%;
+                        box-shadow: none;
+                        border-radius: 0;
+                        span {
+                            h2 {
+                                font-size: 2rem;
+                            }
+                            i {
+                                font-size: 3rem;
+                            }
+                        }
+                    }
+                    .sidenav {
+                        position: absolute;
+                        right: 0;
+                        i {
+                            color: #fff;
+                        }
+                        ul {
+                            background: $primary-color;
+                            top: 5rem;
+                            right: 2rem;
+                            width: 300px;
+                            padding: 2rem;
+                            box-shadow: none;
+                            transform: translate3d(-50%, 0, 0);
+                            li {
+                                a {
+                                    padding: 1rem 4rem 1rem 1rem;
+                                    color: #fff;
+                                    &:hover {
+                                        background: darken($secondary-color, 5);
+                                    }
+                                    &.active {
+                                        background: darken($secondary-color, 9);
+                                        &:hover {
+                                            background: darken($secondary-color, 9);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .donations-table {
+                    padding: 5rem 0rem;
+                    margin: 0;
+                    overflow: hidden;
+                    h3 {
+                        padding: 1rem 2rem;
+                    }
+                    table {
+                        border-radius: 0;
+                        overflow: hidden;
+                        padding: 3rem 0;
+                        tr {
+                            th {
+                                font-size: 1rem;
+                                padding: 0.5rem 1rem;
+                                width: 20%;
+                            }
+                            td {
+                                font-size: 1rem;
+                                padding: 1rem 2rem;
+                                width: 20%;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#patients {
+            .sidenav {
+                position: absolute;
+                left: 0;
+                i {
+                    color: #fff;
+                }
+                ul {
+                    background: $primary-color;
+                    top: 5rem;
+                    left: 2rem;
+                    width: 300px;
+                    padding: 2rem;
+                    box-shadow: none;
+                    transform: translate3d(-100%, 0, 0);
+                    li {
+                        a {
+                            padding: 1rem 4rem 1rem 1rem;
+                            color: #fff;
+                            &:hover {
+                                background: darken($secondary-color, 5);
+                            }
+                            &.active {
+                                background: darken($secondary-color, 9);
+                                &:hover {
+                                    background: darken($secondary-color, 9);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .patients-wrapper {
+                padding: 2rem 0;
+                h2 {
+                    padding: 0 1rem;
+                }
+                .filter-form {
+                    padding: 2rem 0.5rem;
+                    border-radius: 0;
+                    margin: 0;
+                    form {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        padding: 2rem 1rem;
+                        justify-content: space-evenly;
+                        .input {
+                            margin: 1rem 0;
+                            width: 90%;
+                            select {
+                                width: 90%;
+                            }
+                        }
+                        button {
+                            padding: 0.3rem 0.5rem !important;
+                        }
+                    }
+                }
+                .patients-table {
+                    padding: 5rem 0rem;
+                    margin: 0;
+                    h3 {
+                        padding: 1rem 2rem;
+                    }
+                    table {
+                        border-radius: 0;
+                        overflow: auto;
+                        padding: 3rem 0;
+                        tr {
+                            th {
+                                font-size: 1rem;
+                                padding: 0.5rem 1rem;
+                                width: 30%;
+                            }
+                            td {
+                                font-size: 1rem;
+                                padding: 1rem 1.5rem;
+                                width: 30%;
+                                margin: 0;
+                            }
+                        }
+                    }
+                    .total {
+                        padding: 2rem 1rem;
+                        span {
+                            padding: 2rem 1rem;
+                            background: $secondary-color;
+                            border-radius: 2rem;
+                            float: right;
+                            h3 {
+                                font-size: 1rem;
+                                color: $primary-color;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#payments {
+            #payment-page-form {
+                .payment-page-hdr {
+                    padding: 1.5rem 2rem;
+                    span {
+                        i {
+                            font-size: 2rem;
+                        }
+                        h2 {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    i {
+                        &.lni-close {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                .payment-form {
+                    display: block;
+                    padding: 3rem 2rem;
+                    form {
+                        padding: 3rem 2rem;
+                        width: 100%;
+                        .input {
+                            input {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .payments-content {
+                .di {
+                    padding: 0;
+                    .content-hdr {
+                        padding: 5rem 2rem;
+                        width: 100%;
+                        box-shadow: none;
+                        border-radius: 0;
+                        span {
+                            h2 {
+                                font-size: 2rem;
+                            }
+                            i {
+                                font-size: 3rem;
+                            }
+                        }
+                    }
+                    .sidenav {
+                        position: absolute;
+                        right: 0;
+                        i {
+                            color: #fff;
+                        }
+                        ul {
+                            background: $primary-color;
+                            top: 5rem;
+                            right: 2rem;
+                            width: 300px;
+                            padding: 2rem;
+                            box-shadow: none;
+                            transform: translate3d(-50%, 0, 0);
+                            li {
+                                a {
+                                    padding: 1rem 4rem 1rem 1rem;
+                                    color: #fff;
+                                    &:hover {
+                                        background: darken($secondary-color, 5);
+                                    }
+                                    &.active {
+                                        background: darken($secondary-color, 9);
+                                        &:hover {
+                                            background: darken($secondary-color, 9);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .payments-table {
+                    padding: 5rem 0rem;
+                    margin: 0;
+                    overflow: hidden;
+                    h3 {
+                        padding: 1rem 2rem;
+                    }
+                    table {
+                        border-radius: 0;
+                        overflow: hidden;
+                        padding: 3rem 0;
+                        tr {
+                            th {
+                                font-size: 1rem;
+                                padding: 0.5rem 1rem;
+                                width: 20%;
+                            }
+                            td {
+                                font-size: 1rem;
+                                padding: 1rem 2rem;
+                                width: 20%;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#health-officer {
+            #health-page-form {
+                .health-page-hdr {
+                    padding: 1.5rem 2rem;
+                    span {
+                        i {
+                            font-size: 2rem;
+                        }
+                        h2 {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    i {
+                        &.lni-close {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                .health-form {
+                    display: block;
+                    padding: 3rem 2rem;
+                    form {
+                        padding: 3rem 2rem;
+                        width: 100%;
+                        .input {
+                            input {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .health-content {
+                .di {
+                    padding: 0;
+                    .content-hdr {
+                        padding: 5rem 2rem;
+                        width: 100%;
+                        box-shadow: none;
+                        border-radius: 0;
+                        span {
+                            h2 {
+                                font-size: 2rem;
+                            }
+                            i {
+                                font-size: 3rem;
+                            }
+                        }
+                    }
+                    .sidenav {
+                        position: absolute;
+                        right: 0;
+                        i {
+                            color: #fff;
+                        }
+                        ul {
+                            background: $primary-color;
+                            top: 5rem;
+                            right: 2rem;
+                            width: 300px;
+                            padding: 2rem;
+                            box-shadow: none;
+                            transform: translate3d(-50%, 0, 0);
+                            li {
+                                a {
+                                    padding: 1rem 4rem 1rem 1rem;
+                                    color: #fff;
+                                    &:hover {
+                                        background: darken($secondary-color, 5);
+                                    }
+                                    &.active {
+                                        background: darken($secondary-color, 9);
+                                        &:hover {
+                                            background: darken($secondary-color, 9);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .health-table {
+                    padding: 5rem 0rem;
+                    margin: 0;
+                    h3 {
+                        padding: 1rem 2rem;
+                    }
+                    table {
+                        border-radius: 0;
+                        overflow: auto;
+                        padding: 3rem 0;
+                        tr {
+                            th {
+                                font-size: 1rem;
+                                padding: 0.5rem 1rem;
+                                width: 20%;
+                            }
+                            td {
+                                font-size: 1rem;
+                                padding: 1rem 1rem;
+                                width: 20%;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// small screens
+@include mediaSm {
+    .hide-on-small {
+        display: none;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .nav-wrapper {
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 1rem;
+            h2 {
+                a {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: darken($secondary-color, 3);
+                }
+            }
+            .nav-btns {
+                .btn {
+                    margin: 0 0.3rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    main {
+        &#home {
+            .icon-nav {
+                .logged-in {
+                    display: flex;
+                }
+            }
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0;
+                .sidenav {
+                    &#mobile {
+                        display: block;
+                        i {
+                            font-size: 3rem;
+                            margin: 1rem;
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                        ul {
+                            padding: 5rem 2rem 3rem 2rem;
+                            background: $primary-color;
+                            width: 50%;
+                            border-radius: 0;
+                            position: fixed;
+                            display: flex;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            flex-direction: column;
+                            visibility: hidden;
+                            transform: translate3d(-50%, 0, 0);
+                            @include easeOut;
+                            &.show {
+                                visibility: visible;
+                                transform: translate3d(0, 0, 0);
+                            }
+                            i {
+                                font-size: 3rem;
+                                margin: 1rem 0;
+                                color: #fff;
+                                text-align: right;
+                                z-index: 4;
+                                cursor: pointer;
+                            }
+                            li {
+                                list-style: none;
+                                margin: 1rem 0;
+                                a {
+                                    padding: 0.8rem 3rem 0.8rem 1rem;
+                                    border-radius: 1rem;
+                                    width: 100%;
+                                    font-size: 1.3rem;
+                                    &:hover {
+                                        background: darken(rgb(241, 241, 241), 5);
+                                    }
+                                    &.active {
+                                        background: darken(rgb(241, 241, 241), 9);
+                                        &:hover {
+                                            background: darken(rgb(241, 241, 241), 9);
+                                        }
+                                    }
+                                    i {
+                                        font-size: 2rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .dashboard-sum {
+                    width: 100%;
+                    padding: 5rem 1rem;
+                    border-radius: 2rem;
+                    background: #fff;
+                    h4 {
+                        font-size: 2rem;
+                    }
+                    .gr {
+                        padding: 3rem 2rem;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .charts {
+                        h3 {
+                            font-size: 2rem;
+                        }
+                        .donations-chart {
+                            padding: 2rem 0;
+                            h4 {
+                                font-size: 1.5rem;
+                            }
+                        }
+                        .enrollment-chart {
+                            padding: 2rem 0;
+                            h4 {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#account {
+            #login-page {
+                .login-page-hdr {
+                    padding: 1rem 2rem;
+                    span {
+                        h2 {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+                .login-form {
+                    display: block;
+                    padding: 3rem 2rem;
+                    form {
+                        padding: 3rem 2rem;
+                        width: 100%;
+                        .input {
+                            input {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            #signup-page {
+                .signup-page-hdr {
+                    padding: 1rem 2rem;
+                    span {
+                        h2 {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+                .signup-form {
+                    display: block;
+                    padding: 3rem 2rem;
+                    form {
+                        padding: 3rem 2rem;
+                        width: 100%;
+                        .input {
+                            input {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#donations {
+            #donation-page-form {
+                .donation-page-hdr {
+                    padding: 1.5rem 2rem;
+                    span {
+                        i {
+                            font-size: 2rem;
+                        }
+                        h2 {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    i {
+                        &.lni-close {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                .donation-form {
+                    display: block;
+                    padding: 3rem 2rem;
+                    form {
+                        padding: 3rem 2rem;
+                        width: 100%;
+                        .input {
+                            input {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .donations-content {
+                .di {
+                    padding: 0;
+                    .content-hdr {
+                        padding: 5rem 2rem;
+                        width: 100%;
+                        box-shadow: none;
+                        border-radius: 0;
+                        span {
+                            h2 {
+                                font-size: 2rem;
+                            }
+                            i {
+                                font-size: 3rem;
+                            }
+                        }
+                    }
+                    .sidenav {
+                        position: absolute;
+                        right: 0;
+                        i {
+                            color: #fff;
+                        }
+                        ul {
+                            background: $primary-color;
+                            top: 5rem;
+                            right: 2rem;
+                            width: 300px;
+                            padding: 2rem;
+                            box-shadow: none;
+                            transform: translate3d(-50%, 0, 0);
+                            li {
+                                a {
+                                    padding: 1rem 4rem 1rem 1rem;
+                                    color: #fff;
+                                    &:hover {
+                                        background: darken($secondary-color, 5);
+                                    }
+                                    &.active {
+                                        background: darken($secondary-color, 9);
+                                        &:hover {
+                                            background: darken($secondary-color, 9);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .donations-table {
+                    padding: 5rem 0rem;
+                    margin: 0;
+                    overflow: hidden;
+                    h3 {
+                        padding: 1rem 2rem;
+                    }
+                    table {
+                        border-radius: 0;
+                        overflow: hidden;
+                        padding: 3rem 0;
+                        tr {
+                            th {
+                                font-size: 1rem;
+                                padding: 0.5rem 1rem;
+                                width: 20%;
+                            }
+                            td {
+                                font-size: 1rem;
+                                padding: 1rem 2rem;
+                                width: 20%;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#patients {
+            .sidenav {
+                position: absolute;
+                left: 0;
+                i {
+                    color: #fff;
+                }
+                ul {
+                    background: $primary-color;
+                    top: 5rem;
+                    left: 2rem;
+                    width: 300px;
+                    padding: 2rem;
+                    box-shadow: none;
+                    transform: translate3d(-100%, 0, 0);
+                    li {
+                        a {
+                            padding: 1rem 4rem 1rem 1rem;
+                            color: #fff;
+                            &:hover {
+                                background: darken($secondary-color, 5);
+                            }
+                            &.active {
+                                background: darken($secondary-color, 9);
+                                &:hover {
+                                    background: darken($secondary-color, 9);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .patients-wrapper {
+                padding: 2rem 0;
+                h2 {
+                    padding: 0 1rem;
+                }
+                .filter-form {
+                    padding: 2rem 0.5rem;
+                    border-radius: 0;
+                    margin: 0;
+                    form {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        padding: 2rem 1rem;
+                        justify-content: space-evenly;
+                        .input {
+                            margin: 1rem 0;
+                            width: 90%;
+                            select {
+                                width: 90%;
+                            }
+                        }
+                        button {
+                            padding: 0.3rem 0.5rem !important;
+                        }
+                    }
+                }
+                .patients-table {
+                    padding: 5rem 0rem;
+                    margin: 0;
+                    h3 {
+                        padding: 1rem 2rem;
+                    }
+                    table {
+                        border-radius: 0;
+                        overflow: auto;
+                        padding: 3rem 0;
+                        tr {
+                            th {
+                                font-size: 1rem;
+                                padding: 0.5rem 1rem;
+                                width: 30%;
+                            }
+                            td {
+                                font-size: 1rem;
+                                padding: 1rem 1.5rem;
+                                width: 30%;
+                                margin: 0;
+                            }
+                        }
+                    }
+                    .total {
+                        padding: 2rem 1rem;
+                        span {
+                            padding: 2rem 1rem;
+                            background: $secondary-color;
+                            border-radius: 2rem;
+                            float: right;
+                            h3 {
+                                font-size: 1rem;
+                                color: $primary-color;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#payments {
+            #payment-page-form {
+                .payment-page-hdr {
+                    padding: 1.5rem 2rem;
+                    span {
+                        i {
+                            font-size: 2rem;
+                        }
+                        h2 {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    i {
+                        &.lni-close {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                .payment-form {
+                    display: block;
+                    padding: 3rem 2rem;
+                    form {
+                        padding: 3rem 2rem;
+                        width: 100%;
+                        .input {
+                            input {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .payments-content {
+                .di {
+                    padding: 0;
+                    .content-hdr {
+                        padding: 5rem 2rem;
+                        width: 100%;
+                        box-shadow: none;
+                        border-radius: 0;
+                        span {
+                            h2 {
+                                font-size: 2rem;
+                            }
+                            i {
+                                font-size: 3rem;
+                            }
+                        }
+                    }
+                    .sidenav {
+                        position: absolute;
+                        right: 0;
+                        i {
+                            color: #fff;
+                        }
+                        ul {
+                            background: $primary-color;
+                            top: 5rem;
+                            right: 2rem;
+                            width: 300px;
+                            padding: 2rem;
+                            box-shadow: none;
+                            transform: translate3d(-50%, 0, 0);
+                            li {
+                                a {
+                                    padding: 1rem 4rem 1rem 1rem;
+                                    color: #fff;
+                                    &:hover {
+                                        background: darken($secondary-color, 5);
+                                    }
+                                    &.active {
+                                        background: darken($secondary-color, 9);
+                                        &:hover {
+                                            background: darken($secondary-color, 9);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .payments-table {
+                    padding: 5rem 0rem;
+                    margin: 0;
+                    overflow: hidden;
+                    h3 {
+                        padding: 1rem 2rem;
+                    }
+                    table {
+                        border-radius: 0;
+                        overflow: hidden;
+                        padding: 3rem 0;
+                        tr {
+                            th {
+                                font-size: 1rem;
+                                padding: 0.5rem 1rem;
+                                width: 20%;
+                            }
+                            td {
+                                font-size: 1rem;
+                                padding: 1rem 2rem;
+                                width: 20%;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#health-officer {
+            #health-page-form {
+                .health-page-hdr {
+                    padding: 1.5rem 2rem;
+                    span {
+                        i {
+                            font-size: 2rem;
+                        }
+                        h2 {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    i {
+                        &.lni-close {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                .health-form {
+                    display: block;
+                    padding: 3rem 2rem;
+                    form {
+                        padding: 3rem 2rem;
+                        width: 100%;
+                        .input {
+                            input {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .health-content {
+                .di {
+                    padding: 0;
+                    .content-hdr {
+                        padding: 5rem 2rem;
+                        width: 100%;
+                        box-shadow: none;
+                        border-radius: 0;
+                        span {
+                            h2 {
+                                font-size: 2rem;
+                            }
+                            i {
+                                font-size: 3rem;
+                            }
+                        }
+                    }
+                    .sidenav {
+                        position: absolute;
+                        right: 0;
+                        i {
+                            color: #fff;
+                        }
+                        ul {
+                            background: $primary-color;
+                            top: 5rem;
+                            right: 2rem;
+                            width: 300px;
+                            padding: 2rem;
+                            box-shadow: none;
+                            transform: translate3d(-50%, 0, 0);
+                            li {
+                                a {
+                                    padding: 1rem 4rem 1rem 1rem;
+                                    color: #fff;
+                                    &:hover {
+                                        background: darken($secondary-color, 5);
+                                    }
+                                    &.active {
+                                        background: darken($secondary-color, 9);
+                                        &:hover {
+                                            background: darken($secondary-color, 9);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .health-table {
+                    padding: 5rem 0rem;
+                    margin: 0;
+                    h3 {
+                        padding: 1rem 2rem;
+                    }
+                    table {
+                        border-radius: 0;
+                        overflow: auto;
+                        padding: 3rem 0;
+                        tr {
+                            th {
+                                font-size: 1rem;
+                                padding: 0.5rem 1rem;
+                                width: 20%;
+                            }
+                            td {
+                                font-size: 1rem;
+                                padding: 1rem 1rem;
+                                width: 20%;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

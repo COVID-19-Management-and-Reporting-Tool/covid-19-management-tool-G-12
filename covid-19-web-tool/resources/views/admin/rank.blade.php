@@ -13,36 +13,47 @@
 <body>
     <main id="health-officer">
 
-        <!-- --------------------------- form for registering health workers ----------------------------------------------------------------------------------------------------------------------------- -->
-        <div id="health-page-form" class="modal-form">
-            <div class="health-page-hdr">
+       
+        <!-- --------------------------- form for promoting health workers ----------------------------------------------------------------------------------------------------------------------------- -->
+
+        <div id="promotion" class="modal-promote-form">
+            <div class="promotion-hdr">
                 <span>
-                    <i class="lni lni-user"></i>
-                    <h2>Add Health Officer</h2>
-                </span>
+                            <i class="lni lni-user"></i>
+                            <h2>Rank Health Officer</h2>
+                        </span>
                 <i class="lni lni-close" id="modal-btn-close"></i>
             </div>
-            <div class="health-form">
-                <form action="healthofficer"  method="post">
+            <div class="promotion-form">
+            <form action="rank" method="post">
                     @csrf
+                    <div class="results">
+                @if(Session::get('success'))
+                <div style="color:green;font-size:40px;">{{Session::get('success')}}</div>
+
+                @endif
+                @if(Session::get('fail'))
+                <div style="color:red">{{Session::get('fail')}}</div>
+
+                @endif
+                </div>
                     <div class="input">
                         <label for="fullname">Full Name</label>
                         <i class="lni lni-user"></i>
-                        <input type="text" name="fullname" id="fullname" placeholder="eg. John Doe">
-                        <span style="color:red">@error('fullname'){{$message}} @enderror</span>
+                        <input type="text" name="name" id="fullname" value="">
+                        <span style="color:red">@error('name'){{$message}} @enderror</span>
                     </div>
-                  
-                    <button name="addOfficer" type="submit">Add</button>
+                    <div class="input">
+                        <label for="type">Type of Rank</label>
+                        <i class="lni lni-user"></i>
+                        <input type="text" name="Title" id="type" placeholder="eg. headofficer">
+                        <span style="color:red">@error('Title'){{$message}} @enderror</span>
+                    </div>
+                    <button name="addRank" type="submit">Rank</button>
                 </form>
-                <div class="health-img hide-on-small"></div>
+                <div class="promotion-img"></div>
             </div>
         </div>
-        <!-- --------------------------- end of form for registering health workers ----------------------------------------------------------------------------------------------------------------------------- -->
-
-        <!-- --------------------------- form for promoting health workers ----------------------------------------------------------------------------------------------------------------------------- -->
-
-      
-        
 
         <!-- --------------------------- end of form for promoting health workers ----------------------------------------------------------------------------------------------------------------------------- -->
 
@@ -54,6 +65,7 @@
                     <div class="nav-btns">
                         <a href="logout" class="btn">logout</a>
                     </div>
+
                 </nav>
             </div>
             <div class="di">
@@ -62,8 +74,8 @@
                         <h2>Health Officers</h2>
                     <i class="lni lni-user"></i>
                     </span>
-                    <button class="btn modal-btn">Add Health Officer</button>
-                    
+                    <button  hidden class="btn modal-btn">Add Health Officer</button>
+                    <button class="btn promote-btn">Rank Officer</button>
                 </div>
                 <div class="sidenav">
                     <i class="lni lni-chevron-right" id="menu-btn"></i>
@@ -71,34 +83,13 @@
                         <li class="sidenav-link"><a href="donations"><i class="lni lni-money-location"></i> Donations</a></li>
                         <li class="sidenav-link"><a href="patient"><i class="lni lni-user"></i> Patients</a></li>
                         <li class="sidenav-link"><a href="payment"><i class="lni lni-coin"></i> Payments</a></li>
+                        <li class="sidenav-link"><a href="healthofficer" ><i class="lni lni-user"></i> Health Officers</a></li>
                         <li class="sidenav-link"><a href="index" ><i class="lni lni-dashboard"></i> Dashboad</a></li>
-                        <li class="sidenav-link"><a href="healthofficer" class="active"><i class="lni lni-user"></i> Health Officers</a></li>
                         <li class="sidenav-link"><a href="rank" class="active"><i class="lni lni-user"></i> Rank Officers</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="health-table">
-                <h3>List of Health Officers</h3>
-                <div class="here"></div>
-                <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Type</th>
-                        <th>Salary</th>
-                        <th>Hospital</th>
-                    </tr>
-                    @foreach($workers as $worker)
-                    <tr>
-                        <td>{{$worker['name']}}</td>
-                        <td>{{$worker['category']}}</td>
-                        <td>{{$worker['salary']}}</td>
-                        <td>{{$worker['hospital']}}</td>
-                        
-                    </tr>
-                    @endforeach
-                   
-                </table>
-            </div>
+           
         </div>
     </main>
     <footer>
@@ -110,6 +101,5 @@
 <script src="js/sidenav.js"></script>
 <script src="js/main.js"></script>
 
- 
 
 </html>

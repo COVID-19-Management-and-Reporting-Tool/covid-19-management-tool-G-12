@@ -61,11 +61,13 @@
                 </div>
                 <div class="sidenav">
                     <i class="lni lni-chevron-right" id="menu-btn"></i>
-                    <ul class="sidenav-menu">
+                    <ul class="sidenav-menu-mobile">
                         <li class="sidenav-link"><a href="donations" class="active"><i class="lni lni-money-location"></i> Donations</a></li>
                         <li class="sidenav-link"><a href="patient"><i class="lni lni-user"></i> Patients</a></li>
                         <li class="sidenav-link"><a href="payment"><i class="lni lni-coin"></i> Payments</a></li>
+                        <li class="sidenav-link"><a href="index" ><i class="lni lni-dashboard"></i> Dashboad</a></li>
                         <li class="sidenav-link"><a href="healthofficer"><i class="lni lni-user"></i> Health Officers</a></li>
+                        <li class="sidenav-link"><a href="rank"><i class="lni lni-user"></i> Rank Officers</a></li>
                     </ul>
                 </div>
             </div>
