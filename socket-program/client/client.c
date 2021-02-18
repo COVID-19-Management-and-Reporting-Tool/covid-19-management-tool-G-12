@@ -117,6 +117,7 @@ int send_and_receive_data(struct PatientData c, int rcv)
         return 1;
     }
     //printf("Socket is created\n");
+//socket is created//
 
     if (SocketConnect(hSocket) < 0)
     {
@@ -170,6 +171,7 @@ int main(){
 	printf("	       Below are a list of commands you can use to interact with this command line tool.\n                   MAKE SURE TO USE HYTHENS TO SEPERATE THE DATA IN THE APPROPRIATE COMMANDS\n\n");
 	printf("[Addpatient -<patient_name> -<date_of_identificaton> -<covid_status> -<nature> -<gender> -<health_officer_name>]\n");
 	printf("[Check_status]\n");
+//this checks the status//
 	printf("[Addpatientlist -<filename.txt>]\n");
 	printf("[Search -<criteria by name >]\n\n");
 	printf("Use the commands as provided. Misspelt commands will not work\n\n");
