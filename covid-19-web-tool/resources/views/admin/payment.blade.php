@@ -28,7 +28,7 @@
         <div class="payments-content">
             <div class="nav-wrapper">
                 <nav class="nav-bar">
-                    <h2 class="logo"><a href="/">covid-19 management and reporting tool</a></h2>
+                    <h2 class="logo"><a href="index">covid-19 management and reporting tool</a></h2>
                     <div class="nav-btns">
                         <a href="logout" class="btn">logout</a>
                     </div>
@@ -50,6 +50,7 @@
                         <li class="sidenav-link"><a href="index"><i class="lni lni-dashboard"></i> Dashboad</a></li>
                         <li class="sidenav-link"><a href="payment" class="active"><i class="lni lni-coin"></i> Payments</a></li>
                         <li class="sidenav-link"><a href="healthofficer"><i class="lni lni-user"></i> Health Officers</a></li>
+                        <li class="sidenav-link"><a href="organization" ><i class="lni lni-users"></i> Org Chart</a></li>
                         <li class="sidenav-link"><a href="rank"><i class="lni lni-user"></i> Rank Officers</a></li>
                     </ul>
                 </div>

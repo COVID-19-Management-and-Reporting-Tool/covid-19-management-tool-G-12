@@ -98,6 +98,7 @@ main {
   /* ------------------------------------------ payments ------------------------------------------------------------------------------------------------------------------------------------ */
   /* ------------------------------------------ patients ------------------------------------------------------------------------------------------------------------------------------------ */
   /* ------------------------------------------ health officer ------------------------------------------------------------------------------------------------------------------------------------ */
+  /***********************************************organization chart****************************************************************************/
   /* --------------------- back top top button -------------------------------------------------------------------------- */
 }
 
@@ -446,7 +447,7 @@ main#account #signup-page .signup-form form .form-txt p a {
 
 main#account #signup-page .signup-form .signup-img {
   width: 40%;
-  background: url(/img/bg-3.svg);
+  background: url(img/bg-3.svg);
   background-size: cover;
 }
 
@@ -578,7 +579,7 @@ main#donations #donation-page-form .donation-form form .form-txt p a {
 
 main#donations #donation-page-form .donation-form .donation-img {
   width: 40%;
-  background: url(/img/bg-2.svg);
+  background: url(img/bg-2.svg);
   background-size: cover;
 }
 
@@ -866,7 +867,7 @@ main#payments #payment-page-form .payment-form form .form-txt p a {
 
 main#payments #payment-page-form .payment-form .payment-img {
   width: 40%;
-  background: url(/img/bg-2.svg);
+  background: url(img/bg-2.svg);
   background-size: cover;
 }
 
@@ -1324,7 +1325,7 @@ main#health-officer #health-page-form .health-form form .form-txt p a {
 
 main#health-officer #health-page-form .health-form .health-img {
   width: 40%;
-  background: url(/img/bg-2.svg);
+  background: url(img/bg-2.svg);
   background-size: cover;
 }
 
@@ -1620,6 +1621,83 @@ main#health-officer .health-table table tr td button.senior {
 
 main#health-officer .health-table table tr td button.deactivate {
   display: none;
+}
+
+main#organization .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem 0 0 2rem;
+  background: #2997b9;
+}
+
+main#organization .content .sidenav {
+  width: 20%;
+}
+
+main#organization .content .sidenav ul {
+  padding: 2rem 0;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+main#organization .content .sidenav ul li {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+main#organization .content .sidenav ul li a {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+main#organization .content .sidenav ul li a.active {
+  background: #217893;
+}
+
+main#organization .content .sidenav ul li a:hover {
+  background: #2486a4;
+}
+
+main#organization .content .sidenav ul li a i {
+  font-size: 2rem;
+  margin: 0.7rem 0.5rem 0 0.5rem;
+}
+
+main#organization .organization-chart {
+  width: 80%;
+  padding: 5rem 5rem 5rem 3rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  background: #fff;
+}
+
+main#organization .organization-chart .chart {
+  padding: 2rem 0;
+}
+
+main#organization .organization-chart .chart h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 main a.btn-top {

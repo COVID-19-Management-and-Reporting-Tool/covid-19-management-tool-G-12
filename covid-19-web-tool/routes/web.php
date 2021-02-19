@@ -50,6 +50,9 @@ Route::get('/healthofficer',function(){
 Route::get('/rank',function(){
     return view('admin.rank');
 });
+Route::get('/organization',function(){
+    return view('admin.organization');
+});
 
 Route::post('/donations',[DonationsController::class,'getDonations']);
 Route::get('/donations',[DonationsController::class,'donationList']);

@@ -52,7 +52,7 @@ class indexController extends Controller
         $workers=DB::table('officers')
         ->count();
 
-        //for enrollment
+        //for enrollment data
         $ojan=DB::table('officers')
         ->whereMonth('created_at','01')
         ->count();
@@ -108,6 +108,7 @@ class indexController extends Controller
         return view('admin.index',['jan'=>$jan,'feb'=>$feb,'mar'=>$mar,'apr'=>$apr,'may'=>$may,'jun'=>$jun,'jul'=>$jul,'aug'=>$aug,'sep'=>$sep,'oct'=>$oct,'nov'=>$nov,'dec'=>$dec,'cases'=>$cases,'workers'=>$workers,'ojan'=>$ojan,'ofeb'=>$ofeb,'omar'=>$omar,'oapr'=>$oapr,'omay'=>$omay,'ojun'=>$ojun,'ojul'=>$ojul,'oaug'=>$oaug,'osep'=>$osep,'ooct'=>$ooct,'onov'=>$onov,'odec'=>$odec,'total'=>$total]);
 
     }
+
     
     
 }
