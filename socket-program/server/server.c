@@ -184,7 +184,7 @@ int main(int argc, char *argv[])
 		  	{
 		  		++id;
 		  	}
-		  	fprintf(fptr,"\t%s\t%s\t%s\t%s\t%s\n",patient_info.name,patient_info.date_of_identificaton,patient_info.covid_status,patient_info.gender,patient_info.officer_name);
+		  	fprintf(fptr,"\t%s\t%s\t%s\t%s\t%s\t%s\n",patient_info.name,patient_info.date_of_identificaton,patient_info.covid_status,patient_info.nature,patient_info.gender,patient_info.officer_name);
 		  	fclose(fptr);
 		  	printf("Integer %d\n",id );
 		  	++id;
