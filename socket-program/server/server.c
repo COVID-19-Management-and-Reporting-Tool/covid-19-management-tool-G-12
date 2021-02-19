@@ -1,3 +1,4 @@
+//header files for the server
 #include<stdio.h>
 #include<string.h>
 #include<sys/socket.h>
@@ -100,7 +101,7 @@ int main(int argc, char *argv[])
 	int found=0;
 	int line_count=0;
 	
-	char filepath[]="/home/elijah/Desktop/covid-19-management-tool/cron_job/patient.txt";
+	char filepath[]="/home/elijah/Desktop/covid-19-management-tool/cron_job/patients.txt";
 
 	struct data
 	{
@@ -165,7 +166,7 @@ int main(int argc, char *argv[])
 	      //addpatient option
 	     if(choice==2)
 	     {
-	        fptr=fopen("/home/elijah/Desktop/covid-19-management-tool/cron_job/patient.txt","a");
+	        fptr=fopen("/home/elijah/Desktop/covid-19-management-tool/cron_job/patients.txt","a");
 			if (fptr==NULL)
 			{
 				printf("file failed to open");
@@ -183,7 +184,7 @@ int main(int argc, char *argv[])
 		  	{
 		  		++id;
 		  	}
-		  	fprintf(fptr,"%d\t%s\t%s\t%s\t%s\t%s\t%s\t0\n",id,patient_info.name,patient_info.date_of_identificaton,patient_info.covid_status,patient_info.nature,patient_info.gender,patient_info.officer_name);
+		  	fprintf(fptr,"\t%s\t%s\t%s\t%s\t%s\n",patient_info.name,patient_info.date_of_identificaton,patient_info.covid_status,patient_info.gender,patient_info.officer_name);
 		  	fclose(fptr);
 		  	printf("Integer %d\n",id );
 		  	++id;
@@ -207,7 +208,7 @@ int main(int argc, char *argv[])
 		 	{
 		 		printf("error opening file one\n");
 		 	}
-		 	f2=fopen("/home/elijah/Desktop/covid-19-management-tool/cron_job/patient.txt","a");
+		 	f2=fopen("/home/elijah/Desktop/covid-19-management-tool/cron_job/patients.txt","a");
 		 	if(f2==NULL)
 		 	{
 		 		printf("error opening file two\n");
@@ -260,7 +261,7 @@ int main(int argc, char *argv[])
 			char line[301];
 			int found=0;
 			int line_count=0;
-			char filepath[]="/home/elijah/Desktop/covid-19-management-tool/cron_job/patient.txt";
+			char filepath[]="/home/elijah/Desktop/covid-19-management-tool/cron_job/patients.txt";
 			fp=fopen(filepath,"r");
 			if(fp==NULL)
 			{
@@ -291,6 +292,7 @@ int main(int argc, char *argv[])
 		}
                                          
 	} 
+//while loop keeps executing
 	close(sock);
 	sleep(1);
 	return 0;
