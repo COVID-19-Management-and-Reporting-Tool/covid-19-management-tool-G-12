@@ -81,12 +81,12 @@ struct PatientData getpatientdata(char str[])
 {
 	char data[10][200];
 	// use a hythen as a delimeter and not space because the names may have spaces
-	char* token = strtok(str,"-");
+	char* token = strtok(str,"	");
 
 	int i = 0;
 	while(token != NULL){
 		strcpy(data[i],token);
-		token = strtok(NULL,"-");
+		token = strtok(NULL,"	");
 		++i;
 	}
 	struct PatientData patient1;
@@ -169,11 +169,11 @@ int main(){
 	char str4[200];
 	printf("                              *******COVID-19 MANAGEMENT AND REPORTING TOOL CLI*******\n");
 	printf("	       Below are a list of commands you can use to interact with this command line tool.\n                   MAKE SURE TO USE HYTHENS TO SEPERATE THE DATA IN THE APPROPRIATE COMMANDS\n\n");
-	printf("[Addpatient -<patient_name> -<date_of_identificaton> -<covid_status> -<nature> -<gender> -<health_officer_name>]\n");
+	printf("[Addpatient <patient_name> <date_of_identificaton> <covid_status> <nature> <gender> <health_officer_name>]\n");
 	printf("[Check_status]\n");
 //this checks the status//
-	printf("[Addpatientlist -<filename.txt>]\n");
-	printf("[Search -<criteria by name >]\n\n");
+	printf("[Addpatientlist <filename.txt>]\n");
+	printf("[Search <criteria by name >]\n\n");
 	printf("Use the commands as provided. Misspelt commands will not work\n\n");
 	printf("#Please enter your district#:");
 	char officer_district[100];
