@@ -168,7 +168,7 @@ int main(){
 	char str3[200];
 	char str4[200];
 	printf("                              *******COVID-19 MANAGEMENT AND REPORTING TOOL CLI*******\n");
-	printf("	       Below are a list of commands you can use to interact with this command line tool.\n                   MAKE SURE TO USE HYTHENS TO SEPERATE THE DATA IN THE APPROPRIATE COMMANDS\n\n");
+	printf("	       Below are a list of commands you can use to interact with this command line tool.\n                   MAKE SURE TO USE TABS TO SEPERATE THE DATA IN THE APPROPRIATE COMMANDS\n\n");
 	printf("[Addpatient <patient_name> <date_of_identificaton> <covid_status> <nature> <gender> <health_officer_name>]\n");
 	printf("[Check_status]\n");
 //this checks the status//
